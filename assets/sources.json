@@ -1,0 +1,10 @@
+{
+  "checked": "2026-11-12",
+  "usage": "local_private_design_reference",
+  "assets": [
+    {"file":"giordano-1.jpg","manufacturer":"LB Ceramics","collection":"Джордано","article":"6264-0116","nominal_size_mm":[600,200],"page":"https://lb-ceramics.ru/collections/giordano/","image":"https://lb-ceramics.ru/upload/thumbs/622/6228db050a9bbf5204b527931f357e8b.jpg"},
+    {"file":"exupery-1.jpg","manufacturer":"LB Ceramics","collection":"Экзюпери","article":"6260-0183","nominal_size_mm":[600,300],"page":"https://lb-ceramics.ru/collections/exupery/","image":"https://lb-ceramics.ru/upload/thumbs/4e6/4e6df5dd804cd5925c201bef9b6d761c.jpg"},
+    {"file":"rerikh-1.jpg","manufacturer":"LB Ceramics","collection":"Рерих","article":"6260-0200","nominal_size_mm":[600,300],"page":"https://lb-ceramics.ru/collections/rerikh/","image":"https://lb-ceramics.ru/upload/thumbs/b2d/b2dc8fbf45310338288db3f606250869.jpg"}
+  ],
+  "notes": "Изображения производителя не гарантируют точный цвет партии на экране. Фактура дуба столешницы создана процедурно и является приближённой."
+}
