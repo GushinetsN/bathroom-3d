@@ -4,6 +4,7 @@ import {room,fixtures,floorTiles,wallTiles,subtractRect} from './design.mjs';
 export function createBathroom(inputMaterials={}){
   const defaults={light:0xe9e3d9,green:0x557d78,wood:0x82715f,oak:0xa17c4e,ply:0xd7bc8b,white:0xf6f5ef,black:0x181d1e,steel:0xb1b8bb,grout:0xa49f92,core:0x85877f};
   const mat={};for(const [name,color] of Object.entries(defaults))mat[name]=inputMaterials[name]||new T.MeshStandardMaterial({color,roughness:name==='white'?.18:name==='steel'?.34:.72,metalness:name==='steel'?.75:name==='black'?.25:0});
+  mat.frameFinish=inputMaterials.frameFinish||new T.MeshStandardMaterial({color:0x151719,roughness:.62,metalness:.12});
   mat.glass=inputMaterials.glass||new T.MeshPhysicalMaterial({color:0xeef8f5,roughness:.06,transmission:.94,thickness:.006,ior:1.5});
   mat.darkGlass=inputMaterials.darkGlass||new T.MeshPhysicalMaterial({color:0x26383b,metalness:.15,roughness:.08,clearcoat:1});
   mat.led=inputMaterials.led||new T.MeshStandardMaterial({color:0xfff5dc,emissive:0xffe4b3,emissiveIntensity:2});
@@ -133,7 +134,7 @@ export function createBathroom(inputMaterials={}){
     frame=group('frame');frame.userData.wall='west';objects.frame=frame;const top=H-26;
     function part(id,name){const g=group(id,frame,{name,source:fixtures.frame.source,note:fixtures.frame.note});frameParts.push(g);return g;}
     function plate(width,length){const s=new T.Shape();s.moveTo(0,0);s.lineTo(width,0);s.lineTo(width,length);s.lineTo(0,length);s.closePath();if(length>80)for(let y=25;y<length-15;y+=50){const h=new T.Path();h.absarc(width/2,y,4.5,0,Math.PI*2,true);s.holes.push(h);}return new T.ExtrudeGeometry(s,{depth:2,bevelEnabled:false,curveSegments:8});}
-    function L(length){const g=new T.Group();const a=new T.Mesh(plate(40,length),mat.steel);a.castShadow=true;g.add(a);const b=new T.Mesh(plate(38,length),mat.steel);b.rotation.y=-Math.PI/2;b.position.set(2,0,2);b.castShadow=true;g.add(b);return g;}
+    function L(length){const g=new T.Group();const a=new T.Mesh(plate(40,length),mat.frameFinish);a.castShadow=true;g.add(a);const b=new T.Mesh(plate(38,length),mat.frameFinish);b.rotation.y=-Math.PI/2;b.position.set(2,0,2);b.castShadow=true;g.add(b);return g;}
     let n=0;
     for(const [z,sz]of [[20,1],[700,1],[1180,-1]])for(const [x,sx]of [[20,1],[580,-1]]){
       const g=part(`A${++n}`,`Стойка${n} · L40×40×2`),l=L(top-40);l.scale.set(sx,1,sz);l.position.set(x,40,z);g.add(l);
@@ -144,15 +145,15 @@ export function createBathroom(inputMaterials={}){
     const optionalBeam=long('B3',60,640,580,true,top);optionalBeam.visible=false;optionalBeam.userData.optionalBeam=true;
     for(const [i,z,sz]of [[1,20,1],[2,700,1],[3,1180,-1]]){
       const g=part(`C${i}`,`Поперечина${i} · целый L40`),l=L(560);l.rotation.z=-Math.PI/2;l.scale.z=sz;l.position.set(20,top-2,z);g.add(l);
-      box(g,476,2,36,300,top-1,z+20*sz,mat.steel);
+      box(g,476,2,36,300,top-1,z+20*sz,mat.frameFinish);
     }
     long('D1',700,480,580,true,170);long('D2',700,480,20,false,170);
-    for(const [i,z,sz]of [[1,700,1],[2,1180,-1]]){const g=part(`D${i+2}`,'Нижняя поперечина под полкой'),l=L(560);l.rotation.z=-Math.PI/2;l.scale.z=sz;l.position.set(20,168,z);g.add(l);box(g,476,2,36,300,169,z+20*sz,mat.steel);}
+    for(const [i,z,sz]of [[1,700,1],[2,1180,-1]]){const g=part(`D${i+2}`,'Нижняя поперечина под полкой'),l=L(560);l.rotation.z=-Math.PI/2;l.scale.z=sz;l.position.set(20,168,z);g.add(l);box(g,476,2,36,300,169,z+20*sz,mat.frameFinish);}
     const p1=part('P1','Съёмная фанерная полка15');box(p1,476,15,396,300,177.5,940,mat.ply);
     const p2=part('P2','Задник под раковиной9');box(p2,9,600,400,10,485,940,mat.ply);
     const p3=part('P3','Торцевая вставка6');box(p3,476,600,6,300,485,1184,mat.ply);
     for(const [i,z1,y1,z2,y2]of [[1,60,100,700,810],[2,60,810,700,100]]){
-      const p=part(`X${i}`,'Задняя диагональ30×2'),a=new T.Vector3(8,y1,z1),b=new T.Vector3(8,y2,z2),v=b.clone().sub(a),mesh=box(p,2,v.length(),30,0,0,0,mat.steel);mesh.position.copy(a.clone().add(b).multiplyScalar(.5));mesh.quaternion.setFromUnitVectors(new T.Vector3(0,1,0),v.normalize());
+      const p=part(`X${i}`,'Задняя диагональ30×2'),a=new T.Vector3(8,y1,z1),b=new T.Vector3(8,y2,z2),v=b.clone().sub(a),mesh=box(p,2,v.length(),30,0,0,0,mat.frameFinish);mesh.position.copy(a.clone().add(b).multiplyScalar(.5));mesh.quaternion.setFromUnitVectors(new T.Vector3(0,1,0),v.normalize());
     }
     for(const z of [40,720,1160])for(const x of [40,560]){const hardware=part(`K-${x}-${z}`,'Болтовой узел · схема');cylinder(hardware,7,7,4,x,top-22,z,mat.steel,'x',6);cylinder(hardware,4,4,16,x+8,top-22,z,mat.steel,'x',12);}
     return frame;
