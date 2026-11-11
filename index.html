@@ -5,7 +5,8 @@
 <main>
   <section id="viewport" aria-label="Интерактивная модель санузла"><div id="loading" role="status">Подготовка 3D…</div><div id="view-caption">Общий вид</div><div id="canvas-wrap"></div><div id="gesture">Поворот — мышью или пальцем · масштаб — колесом или двумя пальцами</div></section>
   <aside>
-    <p class="small" style="margin-bottom:18px">Модель показывает внешний вид. Уклоны душевого пола и крепления подстолья требуют отдельной монтажной схемы.</p>
+    <p style="margin-bottom:10px"><a href="./tiling/index.html">Раскладка плитки: 7 листов и PDF</a></p>
+    <p class="small" style="margin-bottom:18px">Пол душа +80 мм, борт +120 мм / ширина100 мм. Уклоны и посадка трапа предложены для согласования. Крепления подстолья требуют проверки.</p>
     <section class="control-section"><label for="camera-view">Ракурс</label><select id="camera-view"><option value="overall">Общий вид</option><option value="plan">План сверху</option><option value="frame">Подстолье</option><option value="entry">От входа</option><option value="north">Верхняя стена</option><option value="west">Левая стена</option><option value="south">Нижняя стена</option><option value="east">Правая стена</option></select><button id="reset-view" type="button">Вернуть выбранный ракурс</button></section>
     <section class="control-section"><label for="wall-mode">Стены</label><select id="wall-mode"><option value="auto">Автоматический срез</option><option value="all">Полностью</option><option value="low">Низкий срез</option><option value="none">Скрыть</option></select><div class="check-list"><label><input id="show-fixtures" type="checkbox" checked>Мебель и сантехника</label><label><input id="show-glass" type="checkbox" checked>Душевое ограждение</label><label><input id="show-counter" type="checkbox" checked>Столешница</label><label><input id="show-dimensions" type="checkbox">Размеры</label></div></section>
     <section class="control-section"><h2>Подстолье</h2><label for="counter-height">Высота столешницы: <output id="height-value">900 мм*</output></label><input id="counter-height" type="range" min="870" max="970" step="10" value="900"><label class="checkbox"><input id="washer-beam" type="checkbox">Передняя балка над машиной</label><label for="explode">Разнесение каркаса</label><input id="explode" type="range" min="0" max="100" value="0"><p id="clearance" aria-live="polite"></p><p class="small">* Высота эскизная. Модель Indesit и её монтажные зазоры пока неизвестны.</p></section>
@@ -13,5 +14,5 @@
     <section class="control-section last"><button id="save-view" type="button">Сохранить вид в PNG</button><a id="saved-view" hidden download>Скачать подготовленный PNG</a><p class="small" id="model-status" role="status">Загрузка модели</p></section>
   </aside>
 </main>
-<script type="module" src="app.mjs?v=20261112-black-frame"></script>
+<script type="module" src="app.mjs?v=20261112-shower-080-120"></script>
 </body></html>

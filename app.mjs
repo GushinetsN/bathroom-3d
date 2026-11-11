@@ -2,8 +2,8 @@ import * as T from './vendor/three.module.js';
 import {OrbitControls} from './vendor/controls/OrbitControls.js';
 import {RoomEnvironment} from './vendor/environments/RoomEnvironment.js';
 import {Reflector} from './vendor/objects/Reflector.js';
-import {createBathroom} from './model.mjs?v=20261112-black-frame';
-import {fixtures,heightCheck} from './design.mjs?v=20261112-black-frame';
+import {createBathroom} from './model.mjs?v=20261112-shower-080-120';
+import {fixtures,heightCheck} from './design.mjs?v=20261112-shower-080-120';
 
 const $=s=>document.querySelector(s),wrap=$('#canvas-wrap');
 let renderer,model,controls,camera,dirty=true,selection=null,selectionBox=null;
@@ -91,6 +91,7 @@ function visibility(){
     if(wallView)g.visible=ui.fixtures.checked&&g.userData.wall===v;
     if(id==='shower')g.visible=g.visible&&ui.glass.checked;
     if(id==='countertop')g.visible=g.visible&&ui.counter.checked;
+    if(id==='showerBase')g.visible=!frameOnly&&!wallView;
   }
   model.setBeam(ui.beam.checked);if(selectionBox)selectionBox.visible=selection&&isVisible(selection);dirty=true;
 }

@@ -1,5 +1,6 @@
 import * as T from './vendor/three.module.js';
-import {room,fixtures,floorTiles,wallTiles,subtractRect} from './design.mjs?v=20261112-black-frame';
+import {room,fixtures} from './design.mjs?v=20261112-shower-080-120';
+import {floorLayout,wallLayout,faces,facePolygon,showerBase,showerHeight,drainLevel} from './tiling-layout.mjs?v=20261112-shower-080-120';
 
 export function createBathroom(inputMaterials={}){
   const defaults={light:0xe9e3d9,green:0x557d78,wood:0x82715f,oak:0xa17c4e,ply:0xd7bc8b,white:0xf6f5ef,black:0x181d1e,steel:0xb1b8bb,grout:0xa49f92,core:0x85877f};
@@ -21,21 +22,34 @@ export function createBathroom(inputMaterials={}){
   function cylinder(parent,r1,r2,h,x,y,z,material,axis='y',segments=32){const mesh=new T.Mesh(new T.CylinderGeometry(r1,r2,h,segments),material);if(axis==='x')mesh.rotation.z=Math.PI/2;if(axis==='z')mesh.rotation.x=Math.PI/2;mesh.position.set(x,y,z);mesh.castShadow=true;parent.add(mesh);return mesh;}
   function pipe(parent,points,r,material){const curve=new T.CatmullRomCurve3(points.map(p=>new T.Vector3(...p)));const mesh=new T.Mesh(new T.TubeGeometry(curve,48,r,10,false),material);mesh.castShadow=true;parent.add(mesh);return mesh;}
   function lathe(parent,profile,sx,sz,x,y,z,material){const curve=new T.SplineCurve(profile.map(p=>new T.Vector2(...p)));const pts=curve.getPoints(64).map(p=>new T.Vector2(T.MathUtils.clamp(p.x,.02,1),T.MathUtils.clamp(p.y,0,140)));const mesh=new T.Mesh(new T.LatheGeometry(pts,72),material);mesh.scale.set(sx,1,sz);mesh.position.set(x,y,z);mesh.castShadow=true;mesh.receiveShadow=true;parent.add(mesh);return mesh;}
+  function surface(parent,poly,height,material,wall=null,rotateGrain=false){
+    const shape=new T.Shape(poly.map(([x,z])=>new T.Vector2(x,wall?z:-z))),geo=new T.ShapeGeometry(shape);
+    if(!wall)geo.rotateX(-Math.PI/2);const p=geo.attributes.position,uv=geo.attributes.uv;
+    const minX=Math.min(...poly.map(v=>v[0])),minZ=Math.min(...poly.map(v=>v[1]));
+    for(let i=0;i<p.count;i++){
+      const x=p.getX(i),z=wall?p.getY(i):p.getZ(i);
+      if(wall){if(wall==='north')p.setXYZ(i,x,z,0);if(wall==='south')p.setXYZ(i,x,z,2060);if(wall==='west')p.setXYZ(i,0,z,x);if(wall==='east')p.setXYZ(i,2260,z,x);uv.setXY(i,(x-minX)/600,(z-minZ)/300);}
+      else{p.setY(i,typeof height==='function'?height(x,z):height);uv.setXY(i,((rotateGrain?z:x)-(rotateGrain?minZ:minX))/600,((rotateGrain?x:z)-(rotateGrain?minX:minZ))/200);}
+    }geo.computeVertexNormals();const mesh=new T.Mesh(geo,material);mesh.receiveShadow=true;parent.add(mesh);return mesh;
+  }
 
   box(floor,2420,90,2220,1130,-54,1030,mat.core);
   box(floor,2260,6,2060,1130,-4,1030,mat.grout);
-  const drainHole={x:2125,y:1160,w:70,h:800};
-  for(const tile of floorTiles())for(const p of subtractRect(tile,drainHole)){
-    const mesh=box(floor,p.w,8.5,p.h,p.x+p.w/2,-4.25,p.y+p.h/2,mat.wood);
-    mesh.userData={id:tile.id,record:{name:'Джордано · '+tile.id,size:[p.w,8.5,p.h],source:'Номинальный формат600×200, шов3',note:'Предварительная раскладка; посадка и резы у трапа не являются монтажной картой.'}};
-    const uv=mesh.geometry.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*p.w/600,uv.getY(i)*p.h/200);
+  objects.showerBase=group('showerBase');const base=objects.showerBase,b=showerBase;
+  box(base,850,58,1050,1835,29,1535,mat.core);
+  box(base,100,119,1050,1460,59.5,1535,mat.wood);box(base,750,119,100,1885,59.5,1060,mat.wood);
+  for(const face of faces)surface(base,facePolygon(face),((x,z)=>showerHeight(x,z)-.7),mat.grout);
+  for(const tile of floorLayout()){
+    const parent=tile.kind==='main'?floor:base,height=tile.kind==='main'?0:tile.kind==='cap'?120:showerHeight;
+    const mesh=surface(parent,tile.poly,height,mat.wood,null,tile.kind==='cap'&&tile.width===100);
+    mesh.userData={id:tile.id,record:{name:'Джордано · '+tile.id,size:[tile.width,tile.depth],source:'Схема раскладки, формат600×200',note:tile.kind==='wet'?'Размеры в плане. Посадку трапа и отметки проверить по паспорту.':'Расчётный рез по номинальному формату.'}};
   }
   const basePlanes={};
   for(const side of ['north','west','south','east']){
     const wall=new T.Group();wall.name=side;wall.userData.wall=side;root.add(wall);walls[side]=wall;
     const plane=new T.Plane(new T.Vector3(0,-1,0),2.3);basePlanes[side]=plane;
     const coreMat=mat.core.clone();coreMat.clippingPlanes=[plane];
-    const tileMat={light:mat.light.clone(),green:mat.green.clone()};for(const m of Object.values(tileMat))m.clippingPlanes=[plane];
+    const tileMat={light:mat.light.clone(),green:mat.green.clone()};for(const m of Object.values(tileMat)){m.clippingPlanes=[plane];m.side=T.DoubleSide;}
     function wallBox(start,width,y,height,depth,material,insideOffset=0){
       const center=start+width/2;let mesh;
       if(side==='north')mesh=box(wall,width,height,depth,center,y+height/2,-depth/2-insideOffset,material);
@@ -47,10 +61,9 @@ export function createBathroom(inputMaterials={}){
     const length=['north','south'].includes(side)?2260:2060;
     if(side==='east'){wallBox(0,200,0,2300,72,coreMat,8.5);wallBox(1000,1060,0,2300,72,coreMat,8.5);wallBox(200,800,2100,200,72,coreMat,8.5);}
     else wallBox(-80,length+160,0,2300,72,coreMat,8.5);
-    for(const tile of wallTiles(side)){
-      const mesh=wallBox(tile.s,tile.w,tile.y,tile.h,8.5,tileMat[tile.material]);
-      mesh.userData={wall:side,id:tile.id,record:{name:(tile.material==='light'?'Экзюпери':'Рерих')+' · '+tile.id,size:[tile.w,tile.h,8.5],source:'Номинальный формат600×300, шов3',note:side==='west'?'Граница цвета на1200 мм от верхнего угла.':'Размерный эскиз; фактический калибр плитки не подтверждён.'}};
-      const uv=mesh.geometry.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*tile.w/600,uv.getY(i)*tile.h/300);
+    for(const tile of wallLayout(side)){
+      const mesh=surface(wall,tile.poly,0,tileMat[tile.material],side);
+      mesh.userData={wall:side,id:tile.id,record:{name:(tile.material==='light'?'Экзюпери':'Рерих')+' · '+tile.id,size:[tile.width,tile.depth],source:'Номинальный формат600×300, шов3',note:side==='west'?'Граница цвета на1200 мм от верхнего угла.':'Подрезка по новой площадке; фактический калибр и проём проверить.'}};
     }
   }
 
@@ -95,6 +108,7 @@ export function createBathroom(inputMaterials={}){
   box(objects.drain,56,1.5,784,2160,4.5,1560,mat.black);
   box(objects.drain,50,2,780,2160,6,1560,mat.steel);
   for(let z=1184;z<1940;z+=20)box(objects.drain,39,1,4,2160,7.1,z,mat.black);
+  objects.drain.position.set(0,drainLevel-7.6,25);
 
   objects.shower=group('shower');
   const gx=1460,gz=1060,gh=1950;
@@ -104,6 +118,7 @@ export function createBathroom(inputMaterials={}){
   for(const [z,len]of [[1310,480],[1810,480]]){const pane=box(objects.shower,6,gh-44,len,gx+9,gh/2,z,mat.glass);pane.castShadow=false;}
   for(const [x,len]of [[1660,380],[2060,380]]){const pane=box(objects.shower,len,gh-44,6,x,gh/2,gz+9,mat.glass);pane.castShadow=false;}
   box(objects.shower,30,220,18,1484,1050,1120,mat.black);box(objects.shower,18,220,30,1520,1050,1084,mat.black);
+  objects.shower.position.y=120;
 
   objects.showerSystem=group('showerSystem');objects.showerSystem.position.set(1860,0,2060);
   rounded(objects.showerSystem,260,56,110,12,0,1072,-60,mat.black);
