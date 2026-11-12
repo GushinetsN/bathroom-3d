@@ -1,6 +1,6 @@
 {
   "date": "2026-11-12",
-  "revision": "20261112-north-left",
+  "revision": "20261112-west-green-full",
   "approvedFloor": {
     "selected": "2026-11-12",
     "reference": "bathroom-corner-shift180.png",
@@ -3551,11 +3551,11 @@
         "kind": "wall",
         "poly": [
           [
-            1452,
+            1801.5,
             174
           ],
           [
-            1452,
+            1801.5,
             5
           ],
           [
@@ -3567,10 +3567,10 @@
             174
           ]
         ],
-        "area": 42334.5,
+        "area": 101400,
         "x": 1201.5,
         "z": 5,
-        "width": 250.5,
+        "width": 600,
         "depth": 169,
         "fullTile": false,
         "material": "green",
@@ -3589,18 +3589,18 @@
             5
           ],
           [
-            1455,
+            1804.5,
             5
           ],
           [
-            1455,
+            1804.5,
             174
           ]
         ],
-        "area": 101400,
-        "x": 1455,
+        "area": 42334.5,
+        "x": 1804.5,
         "z": 5,
-        "width": 600,
+        "width": 250.5,
         "depth": 169,
         "fullTile": false,
         "material": "green",
@@ -3611,11 +3611,11 @@
         "kind": "wall",
         "poly": [
           [
-            1452,
+            1801.5,
             477
           ],
           [
-            1452,
+            1801.5,
             177
           ],
           [
@@ -3627,12 +3627,12 @@
             477
           ]
         ],
-        "area": 75150,
+        "area": 180000,
         "x": 1201.5,
         "z": 177,
-        "width": 250.5,
+        "width": 600,
         "depth": 300,
-        "fullTile": false,
+        "fullTile": true,
         "material": "green",
         "side": "west"
       },
@@ -3649,20 +3649,20 @@
             177
           ],
           [
-            1455,
+            1804.5,
             177
           ],
           [
-            1455,
+            1804.5,
             477
           ]
         ],
-        "area": 180000,
-        "x": 1455,
+        "area": 75150,
+        "x": 1804.5,
         "z": 177,
-        "width": 600,
+        "width": 250.5,
         "depth": 300,
-        "fullTile": true,
+        "fullTile": false,
         "material": "green",
         "side": "west"
       },
@@ -3671,11 +3671,11 @@
         "kind": "wall",
         "poly": [
           [
-            1452,
+            1801.5,
             780
           ],
           [
-            1452,
+            1801.5,
             480
           ],
           [
@@ -3687,12 +3687,12 @@
             780
           ]
         ],
-        "area": 75150,
+        "area": 180000,
         "x": 1201.5,
         "z": 480,
-        "width": 250.5,
+        "width": 600,
         "depth": 300,
-        "fullTile": false,
+        "fullTile": true,
         "material": "green",
         "side": "west"
       },
@@ -3709,20 +3709,20 @@
             480
           ],
           [
-            1455,
+            1804.5,
             480
           ],
           [
-            1455,
+            1804.5,
             780
           ]
         ],
-        "area": 180000,
-        "x": 1455,
+        "area": 75150,
+        "x": 1804.5,
         "z": 480,
-        "width": 600,
+        "width": 250.5,
         "depth": 300,
-        "fullTile": true,
+        "fullTile": false,
         "material": "green",
         "side": "west"
       },
@@ -3731,11 +3731,11 @@
         "kind": "wall",
         "poly": [
           [
-            1452,
+            1801.5,
             1083
           ],
           [
-            1452,
+            1801.5,
             783
           ],
           [
@@ -3747,12 +3747,12 @@
             1083
           ]
         ],
-        "area": 75150,
+        "area": 180000,
         "x": 1201.5,
         "z": 783,
-        "width": 250.5,
+        "width": 600,
         "depth": 300,
-        "fullTile": false,
+        "fullTile": true,
         "material": "green",
         "side": "west"
       },
@@ -3769,20 +3769,20 @@
             783
           ],
           [
-            1455,
+            1804.5,
             783
           ],
           [
-            1455,
+            1804.5,
             1083
           ]
         ],
-        "area": 180000,
-        "x": 1455,
+        "area": 75150,
+        "x": 1804.5,
         "z": 783,
-        "width": 600,
+        "width": 250.5,
         "depth": 300,
-        "fullTile": true,
+        "fullTile": false,
         "material": "green",
         "side": "west"
       },
@@ -3791,11 +3791,11 @@
         "kind": "wall",
         "poly": [
           [
-            1452,
+            1801.5,
             1386
           ],
           [
-            1452,
+            1801.5,
             1086
           ],
           [
@@ -3807,12 +3807,12 @@
             1386
           ]
         ],
-        "area": 75150,
+        "area": 180000,
         "x": 1201.5,
         "z": 1086,
-        "width": 250.5,
+        "width": 600,
         "depth": 300,
-        "fullTile": false,
+        "fullTile": true,
         "material": "green",
         "side": "west"
       },
@@ -3829,20 +3829,20 @@
             1086
           ],
           [
-            1455,
+            1804.5,
             1086
           ],
           [
-            1455,
+            1804.5,
             1386
           ]
         ],
-        "area": 180000,
-        "x": 1455,
+        "area": 75150,
+        "x": 1804.5,
         "z": 1086,
-        "width": 600,
+        "width": 250.5,
         "depth": 300,
-        "fullTile": true,
+        "fullTile": false,
         "material": "green",
         "side": "west"
       },
@@ -3851,11 +3851,11 @@
         "kind": "wall",
         "poly": [
           [
-            1452,
+            1801.5,
             1689
           ],
           [
-            1452,
+            1801.5,
             1389
           ],
           [
@@ -3867,12 +3867,12 @@
             1689
           ]
         ],
-        "area": 75150,
+        "area": 180000,
         "x": 1201.5,
         "z": 1389,
-        "width": 250.5,
+        "width": 600,
         "depth": 300,
-        "fullTile": false,
+        "fullTile": true,
         "material": "green",
         "side": "west"
       },
@@ -3889,20 +3889,20 @@
             1389
           ],
           [
-            1455,
+            1804.5,
             1389
           ],
           [
-            1455,
+            1804.5,
             1689
           ]
         ],
-        "area": 180000,
-        "x": 1455,
+        "area": 75150,
+        "x": 1804.5,
         "z": 1389,
-        "width": 600,
+        "width": 250.5,
         "depth": 300,
-        "fullTile": true,
+        "fullTile": false,
         "material": "green",
         "side": "west"
       },
@@ -3911,11 +3911,11 @@
         "kind": "wall",
         "poly": [
           [
-            1452,
+            1801.5,
             1992
           ],
           [
-            1452,
+            1801.5,
             1692
           ],
           [
@@ -3927,12 +3927,12 @@
             1992
           ]
         ],
-        "area": 75150,
+        "area": 180000,
         "x": 1201.5,
         "z": 1692,
-        "width": 250.5,
+        "width": 600,
         "depth": 300,
-        "fullTile": false,
+        "fullTile": true,
         "material": "green",
         "side": "west"
       },
@@ -3949,20 +3949,20 @@
             1692
           ],
           [
-            1455,
+            1804.5,
             1692
           ],
           [
-            1455,
+            1804.5,
             1992
           ]
         ],
-        "area": 180000,
-        "x": 1455,
+        "area": 75150,
+        "x": 1804.5,
         "z": 1692,
-        "width": 600,
+        "width": 250.5,
         "depth": 300,
-        "fullTile": true,
+        "fullTile": false,
         "material": "green",
         "side": "west"
       },
@@ -3971,11 +3971,11 @@
         "kind": "wall",
         "poly": [
           [
-            1452,
+            1801.5,
             2295
           ],
           [
-            1452,
+            1801.5,
             1995
           ],
           [
@@ -3987,12 +3987,12 @@
             2295
           ]
         ],
-        "area": 75150,
+        "area": 180000,
         "x": 1201.5,
         "z": 1995,
-        "width": 250.5,
+        "width": 600,
         "depth": 300,
-        "fullTile": false,
+        "fullTile": true,
         "material": "green",
         "side": "west"
       },
@@ -4009,20 +4009,20 @@
             1995
           ],
           [
-            1455,
+            1804.5,
             1995
           ],
           [
-            1455,
+            1804.5,
             2295
           ]
         ],
-        "area": 180000,
-        "x": 1455,
+        "area": 75150,
+        "x": 1804.5,
         "z": 1995,
-        "width": 600,
+        "width": 250.5,
         "depth": 300,
-        "fullTile": true,
+        "fullTile": false,
         "material": "green",
         "side": "west"
       }
