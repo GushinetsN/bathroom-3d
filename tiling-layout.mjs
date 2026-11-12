@@ -1,4 +1,4 @@
-import {room,strip,wallRows} from './design.mjs?v=20261112-herringbone-opt3';
+import {room,strip,wallRows} from './design.mjs?v=20261112-approved-corner';
 
 // Heights and finished curb width were confirmed on 2026-11-12.
 // Drain centre/ends, the 2% fall and fixing dimensions remain design proposals.
@@ -16,14 +16,19 @@ export function intersect(p,q){for(let i=0;i<q.length&&p.length;i++){const s=q[i
 export const faces=[{id:'W',name:'Основной уклон',a:-1,c:0,k:d.x},{id:'E',name:'Узкая полоса у стены',a:1,c:0,k:-d.x-d.width},{id:'N',name:'Верхний торец',a:0,c:-1,k:d.z},{id:'S',name:'Нижний торец',a:0,c:1,k:-d.z-d.length}];
 export function facePolygon(face,joint=0){let p=rect(b.x+b.curbWidth+5,b.z+b.curbWidth+5,b.width-b.curbWidth-10,b.depth-b.curbWidth-10);for(const f of [...faces,{a:0,c:0,k:joint?5:0}]){if(f===face)continue;const a=f.a-face.a,c=f.c-face.c,k=face.k-f.k-(joint&&f.id?joint/2*Math.hypot(a,c):0);p=clip(p,a,c,k);}return p;}
 function item(id,kind,p,extra={}){const area=polygonArea(p);return{id,kind,poly:p,area,...bounds(p),fullTile:Math.abs(area-(kind==='wall'?180000:120000))<.5,...extra};}
-export const layoutRevision='20261112-herringbone-opt3';
+export const layoutRevision='20261112-approved-corner';
+export const approvedFloor={selected:'2026-11-12',reference:'bathroom-corner-shift180.png',mainStock:32,totalStock:42,reserveStock:47,
+ note:'Выбранная ёлочка: поворот 180° и сдвиг 7 мм влево/вверх, две целые у угла душа; пристенные полосы 38-44 мм сохранены.'};
 export function herringboneMain(){
-  const out=[],main=[[5,5],[2255,5],[2255,1005],[1405,1005],[1405,2055],[5,2055]],L=603,W=203,ox=300,oz=300;let id=0;
-  for(let i=-3;i<=6;i++)for(let j=-10;j<=10;j++)for(const vertical of[false,true]){
-    const x=ox+i*L+j*W+(vertical?L:0)+1.5,z=oz+i*L-j*W+1.5,w=vertical?200:600,h=vertical?600:200;
+  const out=[],main=[[5,5],[2255,5],[2255,1005],[1405,1005],[1405,2055],[5,2055]],L=603,W=203;
+  // Exact phase of the selected trial, including its 180-degree turn and (-7,-7) shift.
+  for(let i=-8;i<=8;i++)for(let j=-20;j<=20;j++)for(const vertical of[false,true]){
+    const w=vertical?200:600,h=vertical?600:200,x=805+i*L+j*W+(vertical?L:0),z=1608-i*L+j*W-h;
     if(x>2255||z>2055||x+w<5||z+h<5)continue;const p=intersect(main,rect(x,z,w,h));
-    if(p.length>=3&&polygonArea(p)>1)out.push(item('F-'+String(++id).padStart(2,'0'),'main',p,{material:'wood',grainVertical:vertical}));
-  }return out;
+    if(p.length>=3&&polygonArea(p)>1)out.push(item('','main',p,{material:'wood',grainVertical:vertical}));
+  }
+  out.sort((a,b)=>Math.hypot(a.x-1410,a.z-1010)-Math.hypot(b.x-1410,b.z-1010));
+  return out.map((t,i)=>({...t,id:'F'+String(i+1).padStart(2,'0'),cornerStart:i<2}));
 }
 export function floorLayout(){
   const out=herringboneMain();
@@ -58,4 +63,4 @@ export function curbFaces(){return[
   {id:'BN',name:'Наружный короткий борт',length:850,height:120},
   {id:'IL',name:'Внутренняя длинная грань',length:950,height:40},
   {id:'IN',name:'Внутренняя короткая грань',length:750,height:'40…51'}];}
-export function allLayoutData(){const floor=floorLayout(),walls=Object.fromEntries(['north','west','south','east'].map(s=>[s,wallLayout(s)]));const counts=ts=>({pieces:ts.length,whole:ts.filter(t=>t.fullTile).length,cut:ts.filter(t=>!t.fullTile).length});return{date:'2026-11-12',revision:layoutRevision,units:'mm',room,showerBase,drainLevel,floor,faces:faces.map(f=>({...f,poly:facePolygon(f)})),walls,profiles:Object.fromEntries(['north','west','south','east'].map(s=>[s,wallProfile(s)])),curbFaces:curbFaces(),counts:{main:counts(floor.filter(t=>t.kind==='main')),wet:counts(floor.filter(t=>t.kind==='wet')),cap:counts(floor.filter(t=>t.kind==='cap')),walls:counts(Object.values(walls).flat())},status:'Прямая ёлочка90 на основном полу, прямые ряды в душе, горизонтальные стены; номинальные форматы, монтаж проверить.'};}
+export function allLayoutData(){const floor=floorLayout(),walls=Object.fromEntries(['north','west','south','east'].map(s=>[s,wallLayout(s)]));const counts=ts=>({pieces:ts.length,whole:ts.filter(t=>t.fullTile).length,cut:ts.filter(t=>!t.fullTile).length});return{date:'2026-11-12',revision:layoutRevision,approvedFloor,units:'mm',room,showerBase,drainLevel,floor,faces:faces.map(f=>({...f,poly:facePolygon(f)})),walls,profiles:Object.fromEntries(['north','west','south','east'].map(s=>[s,wallProfile(s)])),curbFaces:curbFaces(),counts:{main:counts(floor.filter(t=>t.kind==='main')),wet:counts(floor.filter(t=>t.kind==='wet')),cap:counts(floor.filter(t=>t.kind==='cap')),walls:counts(Object.values(walls).flat())},status:'Выбранная ёлочка90 с двумя целыми у угла душа; прямые ряды в душе, горизонтальные стены; номинальные форматы, монтаж проверить.'};}
