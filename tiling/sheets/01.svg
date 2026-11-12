@@ -16,7 +16,7 @@
 			<path d="M 42,761.889764 L 1148.551181,761.889764 Z" style="stroke: rgb(60%,67%,65%); stroke-linecap: butt; stroke-width: 0.7;"/>
 			<path d="M 42,36 L 1148.551181,36 Z" style="stroke: rgb(60%,67%,65%); stroke-linecap: butt; stroke-width: 0.6;"/>
 			<text x="42" y="23" style="font-family: Arial; font-size: 7px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">СХЕМА РАСКЛАДКИ  |  12.11.2026  |  Размеры в мм. Проверить обмер и калибр перед резкой.</text>
-			<text x="1132.9847748523623" y="23" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">1 / 7</text>
+			<text x="1132.9847748523623" y="23" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">1 / 8</text>
 			<rect x="76.0" y="134.06299212598412" width="640.6299212598426" height="583.9370078740159" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(96%,96%,94%); fill-rule: evenodd;"/>
 			<polygon points="645.1969 433.1181, 475.1181 433.1181, 475.1181 489.811, 645.1969 489.811" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(72%,83%,78%); fill-rule: evenodd;"/>
 			<text x="551.1437107837107" y="464.4645669291338" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,928) scale(1,-1)">F01 Ц</text>

@@ -16,7 +16,7 @@
 			<path d="M 42,761.889764 L 1148.551181,761.889764 Z" style="stroke: rgb(60%,67%,65%); stroke-linecap: butt; stroke-width: 0.7;"/>
 			<path d="M 42,36 L 1148.551181,36 Z" style="stroke: rgb(60%,67%,65%); stroke-linecap: butt; stroke-width: 0.6;"/>
 			<text x="42" y="23" style="font-family: Arial; font-size: 7px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">СХЕМА РАСКЛАДКИ  |  12.11.2026  |  Размеры в мм. Проверить обмер и калибр перед резкой.</text>
-			<text x="1132.9847748523623" y="23" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">7 / 7</text>
+			<text x="1132.9847748523623" y="23" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">7 / 8</text>
 			<rect x="45" y="687" width="190" height="29" style="stroke: rgb(60%,67%,65%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(90%,93%,92%); fill-rule: evenodd;"/>
 			<text x="54" y="697" style="font-family: Arial-Bold; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1394) scale(1,-1)">Поверхность</text>
 			<rect x="235" y="687" width="180" height="29" style="stroke: rgb(60%,67%,65%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(90%,93%,92%); fill-rule: evenodd;"/>
