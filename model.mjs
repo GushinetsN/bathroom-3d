@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
-import {room,fixtures} from './design.mjs?v=20261112-approved-corner';
-import {floorLayout,wallLayout,faces,facePolygon,showerBase,showerHeight,drainLevel} from './tiling-layout.mjs?v=20261112-approved-corner';
+import {room,fixtures} from './design.mjs?v=20261112-north-left';
+import {floorLayout,wallLayout,faces,facePolygon,showerBase,showerHeight,drainLevel} from './tiling-layout.mjs?v=20261112-north-left';
 
 export function createBathroom(inputMaterials={}){
   const defaults={light:0xe9e3d9,green:0x557d78,wood:0x82715f,oak:0xa17c4e,ply:0xd7bc8b,white:0xf6f5ef,black:0x181d1e,steel:0xb1b8bb,grout:0xa49f92,core:0x85877f};

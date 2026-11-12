@@ -1,4 +1,4 @@
-import {room,strip,wallRows} from './design.mjs?v=20261112-approved-corner';
+import {room,strip,wallRows} from './design.mjs?v=20261112-north-left';
 
 // Heights and finished curb width were confirmed on 2026-11-12.
 // Drain centre/ends, the 2% fall and fixing dimensions remain design proposals.
@@ -16,7 +16,7 @@ export function intersect(p,q){for(let i=0;i<q.length&&p.length;i++){const s=q[i
 export const faces=[{id:'W',name:'Основной уклон',a:-1,c:0,k:d.x},{id:'E',name:'Узкая полоса у стены',a:1,c:0,k:-d.x-d.width},{id:'N',name:'Верхний торец',a:0,c:-1,k:d.z},{id:'S',name:'Нижний торец',a:0,c:1,k:-d.z-d.length}];
 export function facePolygon(face,joint=0){let p=rect(b.x+b.curbWidth+5,b.z+b.curbWidth+5,b.width-b.curbWidth-10,b.depth-b.curbWidth-10);for(const f of [...faces,{a:0,c:0,k:joint?5:0}]){if(f===face)continue;const a=f.a-face.a,c=f.c-face.c,k=face.k-f.k-(joint&&f.id?joint/2*Math.hypot(a,c):0);p=clip(p,a,c,k);}return p;}
 function item(id,kind,p,extra={}){const area=polygonArea(p);return{id,kind,poly:p,area,...bounds(p),fullTile:Math.abs(area-(kind==='wall'?180000:120000))<.5,...extra};}
-export const layoutRevision='20261112-approved-corner';
+export const layoutRevision='20261112-north-left';
 export const approvedFloor={selected:'2026-11-12',reference:'bathroom-corner-shift180.png',mainStock:32,totalStock:42,reserveStock:47,
  note:'Выбранная ёлочка: поворот 180° и сдвиг 7 мм влево/вверх, две целые у угла душа; пристенные полосы 38-44 мм сохранены.'};
 export function herringboneMain(){
@@ -52,7 +52,7 @@ export function wallProfile(side){
 }
 export function wallLayout(side){const L=['north','south'].includes(side)?2260:2060;let profile=wallProfile(side).map(([x,h])=>[x,h+5]);
   let tiles=[];let id=0;const zones=side==='west'?[[5,1193.5,'light'],[1201.5,853.5,'green']]:[[5,L-10,side==='north'?'light':'green']];
-  for(const[start,len,material]of zones){const first=len-Math.floor((len+3)/603)*603;for(const row of wallRows())for(const col of strip(len,600,first))tiles.push({id:side+'-'+(++id),s:start+col.start,y:5+row.start,w:col.size,h:row.size,material});}
+  for(const[start,len,material]of zones){const first=side==='north'?600:len-Math.floor((len+3)/603)*603;for(const row of wallRows())for(const col of strip(len,600,first))tiles.push({id:side+'-'+(++id),s:start+col.start,y:5+row.start,w:col.size,h:row.size,material});}
   if(side==='east'){
     // Whole tiles end at the visible shower corner; cuts are placed near the door.
     profile=[[0,5],[195,5],[195,2105],[1005,2105],[1005,5],...profile.filter(p=>p[0]>=1010)];
