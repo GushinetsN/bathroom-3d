@@ -1,24 +1,25 @@
+import {check as frameCheck} from './underframe/compact-design.mjs';
 export const room={width:2260,depth:2060,height:2300,colourBoundary:1200,grout:3,gap:5,door:{start:200,width:800,height:2100,verified:false}};
 export const fixtures={
-  countertop:{name:'Столешница · Дуб вотан',position:[0,874,0],size:[600,26,1200],source:'Куплено · Mebelton, Ozon1035013762',note:'Высота установки900 мм — эскиз. ЛДСП; открытые торцы и отверстия требуют влагозащиты.'},
+  countertop:{name:'Столешница · Дуб вотан',position:[5,874,0],size:[600,26,1200],source:'Куплено · Mebelton, Ozon1035013762',note:'Высота установки900 мм — эскиз. ЛДСП; открытые торцы и отверстия требуют влагозащиты.'},
   basin:{name:'Melana · накладная чаша',position:[140,900,650],size:[360,140,500],source:'Куплено · Ozon276734331',note:'Длинная сторона500 мм вдоль левой стены; положение соответствует рисунку. Форма упрощена.'},
   mirror:{name:'Sundays · зеркало',position:[0,1200,650],size:[16,700,500],source:'Куплено · Ozon3595948833',note:'500×700 мм. Низ1200 мм пока предложен для общего вида; розетку и монтажную высоту уточнить.'},
   toilet:{name:'Grossman GR-4458SQ',position:[0,0,1400],size:[640,835,360],source:'Куплено · снимок Сила воды61933',note:'Ось480 мм от нижней стены по рисунку. Размерная форма, не заводская CAD-модель.'},
-  washer:{name:'Indesit · модель не уточнена',position:[60,0,80],size:[600,850,600],source:'Только марка подтверждена',note:'Условно600×600×850. Показаны зазор60 сзади и20 по бокам; выступ люка и точные зазоры проверить по машине.'},
+  washer:{name:'Indesit · модель не уточнена',position:[75,0,64.2],size:[600,850,600],source:'Только марка подтверждена',note:'Условно600×600×850. Компоновка по подстольюСТО: номинальный проём628,4, по14,2 сбоку; задний зазор60 в отдельной модели, дополнительно5 до стены. Выступ люка и зазоры проверить по реальной машине.'},
   shower:{name:'Triton Вента-Блэк',position:[1460,0,1060],size:[800,1950,1000],source:'Куплено · снимок Сила воды56696',note:'Подтверждён план800×1000. Высота1950 мм и деталировка створок пока условные. Поддона нет.'},
   drain:{name:'TIM · линейный трап',position:[2120,67.8,1185],size:[70,800],source:'Куплено · снимок Сила воды44146',note:'Решётка800×70. Ось105 от стены и по75 от торцов; сдвиг5 мм позволяет целые600×200. Отметка+67,8 и привязка предложены, корпус и фланцы проверить.'},
   showerBase:{name:'Душевая площадка и борт',position:[1410,0,1010],size:[850,120,1050],source:'Уточнение: пол+80, верх борта+120, ширина100; наружный габарит850×1050',note:'Ограждение800×1000 по середине борта. +80 у высокой кромки; уклон2% и решётка+67,8 предложены. В душе прямые ряды, на основном полу ёлочка90.'},
   showerSystem:{name:'Vexorus · душевая система',position:[1860,0,2060],source:'Куплено · Ozon2748840306',note:'Ось400 от правого угла по рисунку. Верхняя лейка250; высота2100 мм и форма стойки эскизные.'},
   hygienic:{name:'ESKO · гигиенический душ',position:[400,600,2060],source:'Куплено · Ozon1956646868',note:'На нижней стене: ось400 от левого угла,600 от пола по рисунку. Монтажные габариты корпуса уточнить.'},
   mixer:{name:'Чёрный гибкий смеситель',source:'Куплено · референс аналога Ozon5652221511',note:'Форма по указанному аналогу. Габариты, вылет и отверстие купленного смесителя нужно проверить на самом изделии.'},
-  frame:{name:'Подстолье · кухонный принцип',source:'Предложение · L40×40×2, чёрная окраска, шесть стоек и фанера',note:'Цвет уголка — чёрный матовый. Перфорация, крепёж и опоры эскизные. Нагрузка узлов и пролёт ЛДСП над машиной не подтверждены.'},
+  frame:{name:'Подстолье · СТО, прямой нахлёст',source:'Последняя версия12.11.2026 · СТО L30×30×2, три рамы,41болтМ6',note:'Чёрный матовый уголок;3малые накладки65×65 сзади, задняя верхняя планка крылом вниз. НожкиМ10, полка18, заднийX. От стены5мм для головок. Прочность и зазоры реальной машины не подтверждены.'},
 };
 
 export function strip(length,size,first,grout=3){
   const out=[];let p=0,i=0;while(p<length-.0001){const n=Math.min(i===0?first:size,length-p);if(n>.0001)out.push({start:p,size:n});p+=n+grout;i++;}return out;
 }
 export function balanced(length,size){const n=Math.max(0,Math.floor((length+3)/(size+3))-1);return strip(length,size,(length-n*size-(n+1)*3)/2);}
-export function wallRows(height=2300){const len=height-10,n=Math.floor((len+3)/303),last=len-n*303;return last>=100?strip(len,300,last):balanced(len,300);}
+export function wallRows(height=2300){return strip(height-10,300,300);}
 export function floorTiles(){
   const out=[];for(const [r,row]of balanced(2050,200).entries())for(const [c,col]of strip(2250,600,118.5+(r%3)*201).entries())out.push({id:`F-${r+1}-${c+1}`,x:5+col.start,y:5+row.start,w:col.size,h:row.size,material:'wood'});return out;
 }
@@ -37,4 +38,4 @@ export function wallTiles(wall){
     for(const p of pieces)out.push({id:`${wall}-${++id}`,s:p.x,y:p.y,w:p.w,h:p.h,material:zone.material});
   }return out;
 }
-export function heightCheck(topHeight,washerHeight,beam){return{clearHeight:topHeight-26-(beam?40:0),gap:topHeight-26-(beam?40:0)-washerHeight,rim:topHeight+140,requiredTop:washerHeight+20+26+(beam?40:0)};}
+export function heightCheck(topHeight,washerHeight){const c=frameCheck({height:topHeight,washerH:washerHeight});return{clearHeight:c.clear,gap:c.gap,rim:c.rim,requiredTop:c.required,width:c.width,sideGap:c.sideGap};}

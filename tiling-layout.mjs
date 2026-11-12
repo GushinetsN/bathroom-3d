@@ -1,4 +1,4 @@
-import {room,strip,wallRows} from './design.mjs?v=20261112-west-green-full';
+import {room,strip,wallRows} from './design.mjs?v=20261112-sto-bottom-rows';
 
 // Heights and finished curb width were confirmed on 2026-11-12.
 // Drain centre/ends, the 2% fall and fixing dimensions remain design proposals.
@@ -16,7 +16,7 @@ export function intersect(p,q){for(let i=0;i<q.length&&p.length;i++){const s=q[i
 export const faces=[{id:'W',name:'Основной уклон',a:-1,c:0,k:d.x},{id:'E',name:'Узкая полоса у стены',a:1,c:0,k:-d.x-d.width},{id:'N',name:'Верхний торец',a:0,c:-1,k:d.z},{id:'S',name:'Нижний торец',a:0,c:1,k:-d.z-d.length}];
 export function facePolygon(face,joint=0){let p=rect(b.x+b.curbWidth+5,b.z+b.curbWidth+5,b.width-b.curbWidth-10,b.depth-b.curbWidth-10);for(const f of [...faces,{a:0,c:0,k:joint?5:0}]){if(f===face)continue;const a=f.a-face.a,c=f.c-face.c,k=face.k-f.k-(joint&&f.id?joint/2*Math.hypot(a,c):0);p=clip(p,a,c,k);}return p;}
 function item(id,kind,p,extra={}){const area=polygonArea(p);return{id,kind,poly:p,area,...bounds(p),fullTile:Math.abs(area-(kind==='wall'?180000:120000))<.5,...extra};}
-export const layoutRevision='20261112-west-green-full';
+export const layoutRevision='20261112-sto-bottom-rows';
 export const approvedFloor={selected:'2026-11-12',reference:'bathroom-corner-shift180.png',mainStock:32,totalStock:42,reserveStock:47,
  note:'Выбранная ёлочка: поворот 180° и сдвиг 7 мм влево/вверх, две целые у угла душа; пристенные полосы 38-44 мм сохранены.'};
 export function herringboneMain(){

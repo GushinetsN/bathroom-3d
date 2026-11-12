@@ -2,8 +2,8 @@ import * as T from './vendor/three.module.js';
 import {OrbitControls} from './vendor/controls/OrbitControls.js';
 import {RoomEnvironment} from './vendor/environments/RoomEnvironment.js';
 import {Reflector} from './vendor/objects/Reflector.js';
-import {createBathroom} from './model.mjs?v=20261112-west-green-full';
-import {fixtures,heightCheck} from './design.mjs?v=20261112-west-green-full';
+import {createBathroom} from './model.mjs?v=20261112-sto-bottom-rows';
+import {fixtures,heightCheck} from './design.mjs?v=20261112-sto-bottom-rows';
 
 const $=s=>document.querySelector(s),wrap=$('#canvas-wrap');
 let renderer,model,controls,camera,dirty=true,selection=null,selectionBox=null;
@@ -11,7 +11,7 @@ const scene=new T.Scene();scene.background=new T.Color(0xe8eeeb);
 const perspective=new T.PerspectiveCamera(49,1,.025,30);
 const ortho=new T.OrthographicCamera(-2,2,2,-2,.01,50);
 let orthoHeight=3.6;
-const ui={view:$('#camera-view'),walls:$('#wall-mode'),fixtures:$('#show-fixtures'),glass:$('#show-glass'),counter:$('#show-counter'),dims:$('#show-dimensions'),height:$('#counter-height'),beam:$('#washer-beam'),explode:$('#explode'),item:$('#item-select')};
+const ui={view:$('#camera-view'),walls:$('#wall-mode'),fixtures:$('#show-fixtures'),glass:$('#show-glass'),counter:$('#show-counter'),dims:$('#show-dimensions'),height:$('#counter-height'),explode:$('#explode'),item:$('#item-select')};
 const captions={overall:'Общий вид',plan:'План сверху',frame:'Подстолье',entry:'От входа',north:'Верхняя стена',west:'Левая стена',south:'Нижняя стена',east:'Правая стена'};
 const elevations=['north','west','south','east'];
 const ray=new T.Raycaster(),pointer=new T.Vector2();
@@ -45,7 +45,7 @@ function dimensions(){
   disposeGroup(dimensionRoot);if(!ui.dims.checked)return;
   const H=Number(ui.height.value)/1000,v=ui.view.value;
   if(v==='frame'){
-    dim([.7,H+.08,0],[.7,H+.08,1.2],'1200 мм');dim([.68,.12,.06],[.68,.12,.7],'640 мм*');dim([.75,0,1.18],[.75,H,1.18],`${Math.round(H*1000)} мм*`,[.13,0,0]);
+    dim([.7,H+.08,0],[.7,H+.08,1.2],'1200 мм');dim([.7,.12,.05],[.7,.12,.6784],'628,4 мм*');dim([.75,0,1.18],[.75,H,1.18],`${Math.round(H*1000)} мм*`,[.13,0,0]);
   }else if(elevations.includes(v)){
     const L=['north','south'].includes(v)?2.26:2.06;
     if(v==='north'||v==='south'){const z=v==='north'?-.04:2.1;dim([0,2.42,z],[L,2.42,z],`${Math.round(L*1000)} мм`);}
@@ -93,7 +93,7 @@ function visibility(){
     if(id==='countertop')g.visible=g.visible&&ui.counter.checked;
     if(id==='showerBase')g.visible=!frameOnly&&!wallView;
   }
-  model.setBeam(ui.beam.checked);if(selectionBox)selectionBox.visible=selection&&isVisible(selection);dirty=true;
+  if(selectionBox)selectionBox.visible=selection&&isVisible(selection);dirty=true;
 }
 function isVisible(o){for(let p=o;p;p=p.parent)if(!p.visible)return false;return true;}
 function indexObjects(){byId=new Map();model.root.traverse(o=>{if(o.userData.id)byId.set(o.userData.id,o);});}
@@ -112,9 +112,9 @@ function pickAt(e){
   const hit=ray.intersectObject(model.root,true).find(h=>isVisible(h.object)&&(!h.object.userData.wall||h.point.y<=model.planes[h.object.userData.wall].constant+.001));
   let o=hit?.object;while(o&&!o.userData.id)o=o.parent;select(o||null);
 }
-function clearance(){const c=heightCheck(Number(ui.height.value),850,ui.beam.checked);$('#height-value').textContent=ui.height.value+' мм*';$('#clearance').textContent=`Просвет ${c.clearHeight} мм. Для условной машины850 мм: зазор ${c.gap} мм. Край чаши ${c.rim} мм.`;$('#clearance').classList.toggle('warn',c.gap<0);}
-function save(){try{localStorage.setItem('bathroom-3d-v1',JSON.stringify({view:ui.view.value,walls:ui.walls.value,fixtures:ui.fixtures.checked,glass:ui.glass.checked,counter:ui.counter.checked,dims:ui.dims.checked,height:Number(ui.height.value),beam:ui.beam.checked,explode:Number(ui.explode.value)}));}catch{}}
-function restore(){try{const d=JSON.parse(localStorage.getItem('bathroom-3d-v1')||'null');if(!d)return;for(const key of ['view','walls'])if([...ui[key].options].some(o=>o.value===d[key]))ui[key].value=d[key];for(const key of ['fixtures','glass','counter','dims','beam'])if(typeof d[key]==='boolean')ui[key].checked=d[key];if(d.height>=870&&d.height<=970)ui.height.value=d.height;if(d.explode>=0&&d.explode<=100)ui.explode.value=d.explode;}catch{}}
+function clearance(){const c=heightCheck(Number(ui.height.value),850);$('#height-value').textContent=ui.height.value+' мм*';$('#clearance').textContent=`Просвет ${c.clearHeight} мм. Для условной машины850 мм: зазор ${c.gap} мм. Проём ${c.width.toFixed(1)} мм, по ${c.sideGap.toFixed(1)} мм сбоку. Край чаши ${c.rim} мм.`;$('#clearance').classList.toggle('warn',c.gap<0);}
+function save(){try{localStorage.setItem('bathroom-3d-v1',JSON.stringify({view:ui.view.value,walls:ui.walls.value,fixtures:ui.fixtures.checked,glass:ui.glass.checked,counter:ui.counter.checked,dims:ui.dims.checked,height:Number(ui.height.value),explode:Number(ui.explode.value)}));}catch{}}
+function restore(){try{const d=JSON.parse(localStorage.getItem('bathroom-3d-v1')||'null');if(!d)return;for(const key of ['view','walls'])if([...ui[key].options].some(o=>o.value===d[key]))ui[key].value=d[key];for(const key of ['fixtures','glass','counter','dims'])if(typeof d[key]==='boolean')ui[key].checked=d[key];if(d.height>=875&&d.height<=975&&(d.height-875)%25===0)ui.height.value=d.height;if(d.explode>=0&&d.explode<=100)ui.explode.value=d.explode;}catch{}}
 try{
   renderer=new T.WebGLRenderer({antialias:true,preserveDrawingBuffer:true,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.8));renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=.95;renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFShadowMap;renderer.localClippingEnabled=true;wrap.appendChild(renderer.domElement);renderer.domElement.setAttribute('aria-label','Трёхмерная размерная модель санузла');renderer.domElement.setAttribute('role','img');
   const pm=new T.PMREMGenerator(renderer),environment=new RoomEnvironment();scene.environment=pm.fromScene(environment,.04).texture;environment.dispose();pm.dispose();scene.environmentIntensity=.4;
@@ -126,7 +126,7 @@ try{
   restore();model.setCounterHeight(Number(ui.height.value));model.objects.frame.userData.wall='west';model.setExplode(Number(ui.explode.value)/100*.28);indexObjects();clearance();cameraView();
   let down=null;renderer.domElement.addEventListener('pointerdown',e=>{down=[e.clientX,e.clientY];});renderer.domElement.addEventListener('pointerup',e=>{if(down&&Math.hypot(e.clientX-down[0],e.clientY-down[1])<5)pickAt(e);down=null;});
   ui.view.addEventListener('change',()=>{cameraView();save();if(innerWidth<=650)$('#viewport').scrollIntoView({block:'start'});});$('#reset-view').addEventListener('click',()=>{cameraView();save();if(innerWidth<=650)$('#viewport').scrollIntoView({block:'start'});});
-  for(const el of [ui.walls,ui.fixtures,ui.glass,ui.counter,ui.beam])el.addEventListener('change',()=>{visibility();clearance();save();});
+  for(const el of [ui.walls,ui.fixtures,ui.glass,ui.counter])el.addEventListener('change',()=>{visibility();clearance();save();});
   ui.dims.addEventListener('change',()=>{dimensions();dirty=true;save();});ui.explode.addEventListener('input',()=>{model.setExplode(Number(ui.explode.value)/100*.28);selectionBox?.update();dirty=true;});ui.explode.addEventListener('change',save);
   ui.height.addEventListener('input',()=>{$('#height-value').textContent=ui.height.value+' мм*';});ui.height.addEventListener('change',()=>{const id=selection?.userData.id;select(null);model.setCounterHeight(Number(ui.height.value));model.objects.frame.userData.wall='west';model.setExplode(Number(ui.explode.value)/100*.28);indexObjects();if(id&&byId.has(id))select(byId.get(id));clearance();dimensions();visibility();save();});
   ui.item.addEventListener('change',()=>select(byId.get(ui.item.value)||null));

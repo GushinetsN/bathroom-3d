@@ -18,102 +18,102 @@
 			<text x="42" y="23" style="font-family: Arial; font-size: 7px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">СХЕМА РАСКЛАДКИ  |  12.11.2026  |  Размеры в мм. Проверить обмер и калибр перед резкой.</text>
 			<text x="1132.9847748523623" y="23" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">4 / 8</text>
 			<rect x="76" y="60.0" width="640.6299212598426" height="651.968503937008" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(96%,96%,95%); fill-rule: evenodd;"/>
-			<polygon points="590.2047 109.3228, 590.2047 61.41732, 715.2126 61.41732, 715.2126 109.3228" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="646.8369817298229" y="88.37007874015748" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,176) scale(1,-1)">S01</text>
-			<text x="639.7266301673229" y="78.37007874015748" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,156) scale(1,-1)">441 × 169</text>
-			<polygon points="419.2756 109.3228, 419.2756 61.41732, 589.3543 61.41732, 589.3543 109.3228" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="498.4432809424214" y="88.37007874015748" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,176) scale(1,-1)">S02</text>
-			<text x="491.3329293799214" y="78.37007874015748" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,156) scale(1,-1)">600 × 169</text>
-			<polygon points="248.3465 109.3228, 248.3465 83.28945, 288.5984 84.09449, 288.5984 95.43307, 316.9449 95.43307, 316.9449 61.41732, 418.4252 61.41732, 418.4252 109.3228" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="341.4497480266439" y="91.26271073372139" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,182) scale(1,-1)">S03</text>
-			<text x="334.3393964641439" y="81.26271073372139" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,162) scale(1,-1)">600 × 169</text>
-			<polygon points="77.41732 109.3228, 77.41732 81.06142, 136.9449 81.06142, 247.4961 83.27244, 247.4961 109.3228" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="155.3277801160406" y="98.54156283390013" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,197) scale(1,-1)">S04</text>
-			<text x="147.4117156629156" y="88.54156283390013" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,177) scale(1,-1)">600 × 99,7</text>
-			<polygon points="590.2047 195.2126, 590.2047 110.1732, 715.2126 110.1732, 715.2126 195.2126" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="646.8369817298229" y="155.69291338582678" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,311) scale(1,-1)">S05</text>
-			<text x="639.7266301673229" y="145.69291338582678" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,291) scale(1,-1)">441 × 300</text>
-			<polygon points="419.2756 195.2126, 419.2756 110.1732, 589.3543 110.1732, 589.3543 195.2126" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="495.1158883642964" y="155.69291338582678" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,311) scale(1,-1)">S06 Ц</text>
-			<text x="494.30373016117136" y="145.69291338582678" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,291) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="248.3465 195.2126, 248.3465 110.1732, 418.4252 110.1732, 418.4252 195.2126" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="324.1867545060286" y="155.69291338582678" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,311) scale(1,-1)">S07 Ц</text>
-			<text x="323.37459630290357" y="145.69291338582678" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,291) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="77.41732 195.2126, 77.41732 110.1732, 247.4961 110.1732, 247.4961 195.2126" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="153.25762064776083" y="155.69291338582678" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,311) scale(1,-1)">S08 Ц</text>
-			<text x="152.44546244463584" y="145.69291338582678" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,291) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="590.2047 281.1024, 590.2047 196.063, 715.2126 196.063, 715.2126 281.1024" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="646.8369817298229" y="241.58267716535437" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,483) scale(1,-1)">S09</text>
-			<text x="639.7266301673229" y="231.58267716535437" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,463) scale(1,-1)">441 × 300</text>
-			<polygon points="419.2756 281.1024, 419.2756 196.063, 589.3543 196.063, 589.3543 281.1024" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="495.1158883642964" y="241.58267716535437" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,483) scale(1,-1)">S10 Ц</text>
-			<text x="494.30373016117136" y="231.58267716535437" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,463) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="248.3465 281.1024, 248.3465 196.063, 418.4252 196.063, 418.4252 281.1024" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="324.1867545060286" y="241.58267716535437" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,483) scale(1,-1)">S11 Ц</text>
-			<text x="323.37459630290357" y="231.58267716535437" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,463) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="77.41732 281.1024, 77.41732 196.063, 247.4961 196.063, 247.4961 281.1024" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="153.25762064776083" y="241.58267716535437" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,483) scale(1,-1)">S12 Ц</text>
-			<text x="152.44546244463584" y="231.58267716535437" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,463) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="590.2047 366.9921, 590.2047 281.9528, 715.2126 281.9528, 715.2126 366.9921" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="646.8369817298229" y="327.47244094488195" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,654) scale(1,-1)">S13</text>
-			<text x="639.7266301673229" y="317.47244094488195" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,634) scale(1,-1)">441 × 300</text>
-			<polygon points="419.2756 366.9921, 419.2756 281.9528, 589.3543 281.9528, 589.3543 366.9921" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="495.1158883642964" y="327.47244094488195" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,654) scale(1,-1)">S14 Ц</text>
-			<text x="494.30373016117136" y="317.47244094488195" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,634) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="248.3465 366.9921, 248.3465 281.9528, 418.4252 281.9528, 418.4252 366.9921" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="324.1867545060286" y="327.47244094488195" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,654) scale(1,-1)">S15 Ц</text>
-			<text x="323.37459630290357" y="317.47244094488195" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,634) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="77.41732 366.9921, 77.41732 281.9528, 247.4961 281.9528, 247.4961 366.9921" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="153.25762064776083" y="327.47244094488195" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,654) scale(1,-1)">S16 Ц</text>
-			<text x="152.44546244463584" y="317.47244094488195" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,634) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="590.2047 452.8819, 590.2047 367.8425, 715.2126 367.8425, 715.2126 452.8819" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="646.8369817298229" y="413.36220472440954" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,826) scale(1,-1)">S17</text>
-			<text x="639.7266301673229" y="403.36220472440954" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,806) scale(1,-1)">441 × 300</text>
-			<polygon points="419.2756 452.8819, 419.2756 367.8425, 589.3543 367.8425, 589.3543 452.8819" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="495.1158883642964" y="413.36220472440954" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,826) scale(1,-1)">S18 Ц</text>
-			<text x="494.30373016117136" y="403.36220472440954" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,806) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="248.3465 452.8819, 248.3465 367.8425, 418.4252 367.8425, 418.4252 452.8819" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="324.1867545060286" y="413.36220472440954" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,826) scale(1,-1)">S19 Ц</text>
-			<text x="323.37459630290357" y="403.36220472440954" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,806) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="77.41732 452.8819, 77.41732 367.8425, 247.4961 367.8425, 247.4961 452.8819" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="153.25762064776083" y="413.36220472440954" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,826) scale(1,-1)">S20 Ц</text>
-			<text x="152.44546244463584" y="403.36220472440954" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,806) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="590.2047 538.7717, 590.2047 453.7323, 715.2126 453.7323, 715.2126 538.7717" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="646.8369817298229" y="499.25196850393706" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,998) scale(1,-1)">S21</text>
-			<text x="639.7266301673229" y="489.25196850393706" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,978) scale(1,-1)">441 × 300</text>
-			<polygon points="419.2756 538.7717, 419.2756 453.7323, 589.3543 453.7323, 589.3543 538.7717" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="495.1158883642964" y="499.25196850393706" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,998) scale(1,-1)">S22 Ц</text>
-			<text x="494.30373016117136" y="489.25196850393706" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,978) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="248.3465 538.7717, 248.3465 453.7323, 418.4252 453.7323, 418.4252 538.7717" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="324.1867545060286" y="499.25196850393706" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,998) scale(1,-1)">S23 Ц</text>
-			<text x="323.37459630290357" y="489.25196850393706" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,978) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="77.41732 538.7717, 77.41732 453.7323, 247.4961 453.7323, 247.4961 538.7717" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="153.25762064776083" y="499.25196850393706" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,998) scale(1,-1)">S24 Ц</text>
-			<text x="152.44546244463584" y="489.25196850393706" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,978) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="590.2047 624.6614, 590.2047 539.622, 715.2126 539.622, 715.2126 624.6614" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="646.8369817298229" y="585.1417322834646" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1170) scale(1,-1)">S25</text>
-			<text x="639.7266301673229" y="575.1417322834646" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1150) scale(1,-1)">441 × 300</text>
-			<polygon points="419.2756 624.6614, 419.2756 539.622, 589.3543 539.622, 589.3543 624.6614" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="495.1158883642964" y="585.1417322834646" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1170) scale(1,-1)">S26 Ц</text>
-			<text x="494.30373016117136" y="575.1417322834646" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1150) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="248.3465 624.6614, 248.3465 539.622, 418.4252 539.622, 418.4252 624.6614" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="324.1867545060286" y="585.1417322834646" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1170) scale(1,-1)">S27 Ц</text>
-			<text x="323.37459630290357" y="575.1417322834646" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1150) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="77.41732 624.6614, 77.41732 539.622, 247.4961 539.622, 247.4961 624.6614" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="153.25762064776083" y="585.1417322834646" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1170) scale(1,-1)">S28 Ц</text>
-			<text x="152.44546244463584" y="575.1417322834646" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1150) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="590.2047 710.5512, 590.2047 625.5118, 715.2126 625.5118, 715.2126 710.5512" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="646.8369817298229" y="671.0314960629922" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1342) scale(1,-1)">S29</text>
-			<text x="639.7266301673229" y="661.0314960629922" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1322) scale(1,-1)">441 × 300</text>
-			<polygon points="419.2756 710.5512, 419.2756 625.5118, 589.3543 625.5118, 589.3543 710.5512" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="495.1158883642964" y="671.0314960629922" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1342) scale(1,-1)">S30 Ц</text>
-			<text x="494.30373016117136" y="661.0314960629922" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1322) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="248.3465 710.5512, 248.3465 625.5118, 418.4252 625.5118, 418.4252 710.5512" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="324.1867545060286" y="671.0314960629922" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1342) scale(1,-1)">S31 Ц</text>
-			<text x="323.37459630290357" y="661.0314960629922" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1322) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="77.41732 710.5512, 77.41732 625.5118, 247.4961 625.5118, 247.4961 710.5512" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
-			<text x="153.25762064776083" y="671.0314960629922" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1342) scale(1,-1)">S32 Ц</text>
-			<text x="152.44546244463584" y="661.0314960629922" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1322) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="590.2047 146.4567, 590.2047 61.41732, 715.2126 61.41732, 715.2126 146.4567" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="646.8369817298229" y="106.93700787401576" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,213) scale(1,-1)">S01</text>
+			<text x="639.7266301673229" y="96.93700787401576" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,193) scale(1,-1)">441 × 300</text>
+			<polygon points="419.2756 146.4567, 419.2756 61.41732, 589.3543 61.41732, 589.3543 146.4567" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="495.1158883642964" y="106.93700787401576" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,213) scale(1,-1)">S02 Ц</text>
+			<text x="494.30373016117136" y="96.93700787401576" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,193) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="248.3465 146.4567, 248.3465 83.28945, 288.5984 84.09449, 288.5984 95.43307, 316.9449 95.43307, 316.9449 61.41732, 418.4252 61.41732, 418.4252 146.4567" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="334.46602715966156" y="111.12150824055927" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,222) scale(1,-1)">S03</text>
+			<text x="327.35567559716156" y="101.12150824055927" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,202) scale(1,-1)">600 × 300</text>
+			<polygon points="77.41732 146.4567, 77.41732 81.06142, 136.9449 81.06142, 247.4961 83.27244, 247.4961 146.4567" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="156.04961535540568" y="117.11414988220818" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,234) scale(1,-1)">S04</text>
+			<text x="146.52070910540567" y="107.11414988220818" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,214) scale(1,-1)">600 × 230,7</text>
+			<polygon points="590.2047 232.3465, 590.2047 147.3071, 715.2126 147.3071, 715.2126 232.3465" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="646.8369817298229" y="192.82677165354332" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,385) scale(1,-1)">S05</text>
+			<text x="639.7266301673229" y="182.82677165354332" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,365) scale(1,-1)">441 × 300</text>
+			<polygon points="419.2756 232.3465, 419.2756 147.3071, 589.3543 147.3071, 589.3543 232.3465" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="495.1158883642964" y="192.82677165354337" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,385) scale(1,-1)">S06 Ц</text>
+			<text x="494.30373016117136" y="182.82677165354337" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,365) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="248.3465 232.3465, 248.3465 147.3071, 418.4252 147.3071, 418.4252 232.3465" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="324.1867545060286" y="192.8267716535434" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,385) scale(1,-1)">S07 Ц</text>
+			<text x="323.37459630290357" y="182.8267716535434" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,365) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="77.41732 232.3465, 77.41732 147.3071, 247.4961 147.3071, 247.4961 232.3465" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="153.25762064776083" y="192.82677165354337" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,385) scale(1,-1)">S08 Ц</text>
+			<text x="152.44546244463584" y="182.82677165354337" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,365) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="590.2047 318.2362, 590.2047 233.1969, 715.2126 233.1969, 715.2126 318.2362" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="646.8369817298229" y="278.71653543307093" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,557) scale(1,-1)">S09</text>
+			<text x="639.7266301673229" y="268.71653543307093" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,537) scale(1,-1)">441 × 300</text>
+			<polygon points="419.2756 318.2362, 419.2756 233.1969, 589.3543 233.1969, 589.3543 318.2362" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="495.1158883642964" y="278.71653543307093" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,557) scale(1,-1)">S10 Ц</text>
+			<text x="494.30373016117136" y="268.71653543307093" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,537) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="248.3465 318.2362, 248.3465 233.1969, 418.4252 233.1969, 418.4252 318.2362" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="324.1867545060286" y="278.71653543307093" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,557) scale(1,-1)">S11 Ц</text>
+			<text x="323.37459630290357" y="268.71653543307093" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,537) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="77.41732 318.2362, 77.41732 233.1969, 247.4961 233.1969, 247.4961 318.2362" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="153.25762064776077" y="278.71653543307093" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,557) scale(1,-1)">S12 Ц</text>
+			<text x="152.44546244463578" y="268.71653543307093" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,537) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="590.2047 404.126, 590.2047 319.0866, 715.2126 319.0866, 715.2126 404.126" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="646.8369817298229" y="364.60629921259846" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,729) scale(1,-1)">S13</text>
+			<text x="639.7266301673229" y="354.60629921259846" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,709) scale(1,-1)">441 × 300</text>
+			<polygon points="419.2756 404.126, 419.2756 319.0866, 589.3543 319.0866, 589.3543 404.126" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="495.1158883642964" y="364.60629921259857" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,729) scale(1,-1)">S14 Ц</text>
+			<text x="494.30373016117136" y="354.60629921259857" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,709) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="248.3465 404.126, 248.3465 319.0866, 418.4252 319.0866, 418.4252 404.126" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="324.18675450602854" y="364.60629921259857" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,729) scale(1,-1)">S15 Ц</text>
+			<text x="323.3745963029035" y="354.60629921259857" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,709) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="77.41732 404.126, 77.41732 319.0866, 247.4961 319.0866, 247.4961 404.126" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="153.2576206477609" y="364.60629921259834" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,729) scale(1,-1)">S16 Ц</text>
+			<text x="152.4454624446359" y="354.60629921259834" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,709) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="590.2047 490.0157, 590.2047 404.9764, 715.2126 404.9764, 715.2126 490.0157" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="646.8369817298229" y="450.49606299212604" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,900) scale(1,-1)">S17</text>
+			<text x="639.7266301673229" y="440.49606299212604" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,880) scale(1,-1)">441 × 300</text>
+			<polygon points="419.2756 490.0157, 419.2756 404.9764, 589.3543 404.9764, 589.3543 490.0157" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="495.1158883642964" y="450.49606299212604" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,900) scale(1,-1)">S18 Ц</text>
+			<text x="494.30373016117136" y="440.49606299212604" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,880) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="248.3465 490.0157, 248.3465 404.9764, 418.4252 404.9764, 418.4252 490.0157" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="324.18675450602854" y="450.49606299212616" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,900) scale(1,-1)">S19 Ц</text>
+			<text x="323.3745963029035" y="440.49606299212616" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,880) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="77.41732 490.0157, 77.41732 404.9764, 247.4961 404.9764, 247.4961 490.0157" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="153.25762064776094" y="450.496062992126" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,900) scale(1,-1)">S20 Ц</text>
+			<text x="152.44546244463595" y="440.496062992126" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,880) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="590.2047 575.9055, 590.2047 490.8661, 715.2126 490.8661, 715.2126 575.9055" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="646.8369817298229" y="536.3858267716537" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1072) scale(1,-1)">S21</text>
+			<text x="639.7266301673229" y="526.3858267716537" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1052) scale(1,-1)">441 × 300</text>
+			<polygon points="419.2756 575.9055, 419.2756 490.8661, 589.3543 490.8661, 589.3543 575.9055" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="495.1158883642964" y="536.3858267716537" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1072) scale(1,-1)">S22 Ц</text>
+			<text x="494.30373016117136" y="526.3858267716537" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1052) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="248.3465 575.9055, 248.3465 490.8661, 418.4252 490.8661, 418.4252 575.9055" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="324.1867545060286" y="536.3858267716537" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1072) scale(1,-1)">S23 Ц</text>
+			<text x="323.37459630290357" y="526.3858267716537" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1052) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="77.41732 575.9055, 77.41732 490.8661, 247.4961 490.8661, 247.4961 575.9055" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="153.25762064776083" y="536.3858267716537" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1072) scale(1,-1)">S24 Ц</text>
+			<text x="152.44546244463584" y="526.3858267716537" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1052) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="590.2047 661.7953, 590.2047 576.7559, 715.2126 576.7559, 715.2126 661.7953" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="646.8369817298229" y="622.2755905511812" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1244) scale(1,-1)">S25</text>
+			<text x="639.7266301673229" y="612.2755905511812" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1224) scale(1,-1)">441 × 300</text>
+			<polygon points="419.2756 661.7953, 419.2756 576.7559, 589.3543 576.7559, 589.3543 661.7953" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="495.1158883642964" y="622.2755905511812" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1244) scale(1,-1)">S26 Ц</text>
+			<text x="494.30373016117136" y="612.2755905511812" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1224) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="248.3465 661.7953, 248.3465 576.7559, 418.4252 576.7559, 418.4252 661.7953" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="324.1867545060286" y="622.2755905511812" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1244) scale(1,-1)">S27 Ц</text>
+			<text x="323.37459630290357" y="612.2755905511812" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1224) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="77.41732 661.7953, 77.41732 576.7559, 247.4961 576.7559, 247.4961 661.7953" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="153.25762064776083" y="622.2755905511812" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1244) scale(1,-1)">S28 Ц</text>
+			<text x="152.44546244463584" y="612.2755905511812" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1224) scale(1,-1)">ЦЕЛАЯ</text>
+			<polygon points="590.2047 710.5512, 590.2047 662.6457, 715.2126 662.6457, 715.2126 710.5512" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="646.8369817298229" y="689.5984251968505" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1379) scale(1,-1)">S29</text>
+			<text x="639.7266301673229" y="679.5984251968505" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1359) scale(1,-1)">441 × 169</text>
+			<polygon points="419.2756 710.5512, 419.2756 662.6457, 589.3543 662.6457, 589.3543 710.5512" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="498.4432809424214" y="689.5984251968505" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1379) scale(1,-1)">S30</text>
+			<text x="491.3329293799214" y="679.5984251968505" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1359) scale(1,-1)">600 × 169</text>
+			<polygon points="248.3465 710.5512, 248.3465 662.6457, 418.4252 662.6457, 418.4252 710.5512" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="327.5141470841536" y="689.5984251968505" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1379) scale(1,-1)">S31</text>
+			<text x="320.4037955216536" y="679.5984251968505" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1359) scale(1,-1)">600 × 169</text>
+			<polygon points="77.41732 710.5512, 77.41732 662.6457, 247.4961 662.6457, 247.4961 710.5512" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(52%,66%,62%); fill-rule: evenodd;"/>
+			<text x="156.58501322588583" y="689.5984251968505" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1379) scale(1,-1)">S32</text>
+			<text x="149.47466166338583" y="679.5984251968505" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1359) scale(1,-1)">600 × 169</text>
 			<path d="M 716.629921,60 L 316.944882,60 Z" style="stroke: rgb(9%,49%,60%); stroke-linecap: butt; stroke-width: 2;"/>
 			<path d="M 316.944882,60 L 316.944882,94.015748 Z" style="stroke: rgb(9%,49%,60%); stroke-linecap: butt; stroke-width: 2;"/>
 			<path d="M 316.944882,94.015748 L 288.598425,94.015748 Z" style="stroke: rgb(9%,49%,60%); stroke-linecap: butt; stroke-width: 2;"/>
@@ -130,53 +130,53 @@
 			<g transform=" matrix(0,1,-1,0,38,385.984252)">
 				<text x="-8.8984375" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">2300</text>
 			</g>
-			<path d="M 736.629921,61.417323 L 736.629921,109.322835 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 736.629921,61.417323 L 736.629921,146.456693 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
 			<path d="M 732.629921,58.417323 L 740.629921,64.417323 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,106.322835 L 740.629921,112.322835 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<g transform=" matrix(0,1,-1,0,729.629921,85.370079)">
-				<text x="-6.673828125" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">169</text>
-			</g>
-			<path d="M 736.629921,110.173228 L 736.629921,195.212598 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,107.173228 L 740.629921,113.173228 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,192.212598 L 740.629921,198.212598 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<g transform=" matrix(0,1,-1,0,729.629921,152.692913)">
+			<path d="M 732.629921,143.456693 L 740.629921,149.456693 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<g transform=" matrix(0,1,-1,0,729.629921,103.937008)">
 				<text x="-6.673828125" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">300</text>
 			</g>
-			<path d="M 736.629921,196.062992 L 736.629921,281.102362 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,193.062992 L 740.629921,199.062992 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,278.102362 L 740.629921,284.102362 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<g transform=" matrix(0,1,-1,0,729.629921,238.582677)">
+			<path d="M 736.629921,147.307087 L 736.629921,232.346457 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,144.307087 L 740.629921,150.307087 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,229.346457 L 740.629921,235.346457 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<g transform=" matrix(0,1,-1,0,729.629921,189.826772)">
 				<text x="-6.673828125" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">300</text>
 			</g>
-			<path d="M 736.629921,281.952756 L 736.629921,366.992126 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,278.952756 L 740.629921,284.952756 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,363.992126 L 740.629921,369.992126 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<g transform=" matrix(0,1,-1,0,729.629921,324.472441)">
+			<path d="M 736.629921,233.19685 L 736.629921,318.23622 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,230.19685 L 740.629921,236.19685 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,315.23622 L 740.629921,321.23622 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<g transform=" matrix(0,1,-1,0,729.629921,275.716535)">
+				<text x="-10.009765625" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">300.0</text>
+			</g>
+			<path d="M 736.629921,319.086614 L 736.629921,404.125984 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,316.086614 L 740.629921,322.086614 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,401.125984 L 740.629921,407.125984 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<g transform=" matrix(0,1,-1,0,729.629921,361.606299)">
 				<text x="-6.673828125" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">300</text>
 			</g>
-			<path d="M 736.629921,367.84252 L 736.629921,452.88189 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,364.84252 L 740.629921,370.84252 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,449.88189 L 740.629921,455.88189 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<g transform=" matrix(0,1,-1,0,729.629921,410.362205)">
+			<path d="M 736.629921,404.976378 L 736.629921,490.015748 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,401.976378 L 740.629921,407.976378 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,487.015748 L 740.629921,493.015748 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<g transform=" matrix(0,1,-1,0,729.629921,447.496063)">
 				<text x="-6.673828125" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">300</text>
 			</g>
-			<path d="M 736.629921,453.732283 L 736.629921,538.771654 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,450.732283 L 740.629921,456.732283 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,535.771654 L 740.629921,541.771654 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<g transform=" matrix(0,1,-1,0,729.629921,496.251969)">
+			<path d="M 736.629921,490.866142 L 736.629921,575.905512 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,487.866142 L 740.629921,493.866142 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,572.905512 L 740.629921,578.905512 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<g transform=" matrix(0,1,-1,0,729.629921,533.385827)">
 				<text x="-6.673828125" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">300</text>
 			</g>
-			<path d="M 736.629921,539.622047 L 736.629921,624.661417 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,536.622047 L 740.629921,542.622047 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,621.661417 L 740.629921,627.661417 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<g transform=" matrix(0,1,-1,0,729.629921,582.141732)">
+			<path d="M 736.629921,576.755906 L 736.629921,661.795276 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,573.755906 L 740.629921,579.755906 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,658.795276 L 740.629921,664.795276 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<g transform=" matrix(0,1,-1,0,729.629921,619.275591)">
 				<text x="-6.673828125" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">300</text>
 			</g>
-			<path d="M 736.629921,625.511811 L 736.629921,710.551181 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<path d="M 732.629921,622.511811 L 740.629921,628.511811 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 736.629921,662.645669 L 736.629921,710.551181 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 732.629921,659.645669 L 740.629921,665.645669 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
 			<path d="M 732.629921,707.551181 L 740.629921,713.551181 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<g transform=" matrix(0,1,-1,0,729.629921,668.031496)">
-				<text x="-6.673828125" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">300</text>
+			<g transform=" matrix(0,1,-1,0,729.629921,686.598425)">
+				<text x="-6.673828125" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,0) scale(1,-1)">169</text>
 			</g>
 			<path d="M 614.582677,230.07874 L 591.905512,230.07874 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.9;"/>
 			<path d="M 603.244094,218.740157 L 603.244094,241.417323 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.9;"/>
@@ -197,13 +197,13 @@
 			<text x="798" y="589" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1178) scale(1,-1)">правого края развёртки, в углу с левой стеной. Три целые плитки в каждом</text>
 			<text x="798" y="575" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1150) scale(1,-1)">полном ряду.</text>
 			<text x="798" y="548" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1096) scale(1,-1)">Ряды снизу вверх</text>
-			<text x="798" y="529" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1058) scale(1,-1)">5 мм примыкание; 169 мм нижняя плитка; затем7 полных рядов300 через</text>
-			<text x="798" y="515" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1030) scale(1,-1)">шов3; сверху5 мм. Ориентация остаётся горизонтальной. Ц - целая600×300;</text>
-			<text x="798" y="501" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1002) scale(1,-1)">стеновая подрезка по высоте только снизу и у проёма.</text>
+			<text x="798" y="529" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1058) scale(1,-1)">5 мм от пола; 7 рядов по300 через шов3; верхняя подрезка169 до</text>
+			<text x="798" y="515" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1030) scale(1,-1)">отметки2295; сверху5 мм. Начинать целыми от пола. Натяжной потолок</text>
+			<text x="798" y="501" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1002) scale(1,-1)">скроет часть верхнего ряда; его отметку уточнить. Ц - целая600×300.</text>
 			<text x="798" y="474" style="font-family: Arial; font-size: 10px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,948) scale(1,-1)">Подрезка у душа</text>
 			<text x="798" y="454" style="font-family: Arial; font-size: 10px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,908) scale(1,-1)">Ряды не начинаются заново от площадки. Нижний ряд режется по</text>
 			<text x="798" y="439" style="font-family: Arial; font-size: 10px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,878) scale(1,-1)">синей линии плюс шов примыкания 5 мм. Над бортом +120 видимая</text>
-			<text x="798" y="424" style="font-family: Arial; font-size: 10px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,848) scale(1,-1)">высота нижней плитки 49 мм; внутри душа высота меняется по</text>
+			<text x="798" y="424" style="font-family: Arial; font-size: 10px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,848) scale(1,-1)">высота нижней плитки 180 мм; внутри душа высота меняется по</text>
 			<text x="798" y="409" style="font-family: Arial; font-size: 10px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,818) scale(1,-1)">уклону.</text>
 			<text x="798" y="381" style="font-family: Arial; font-size: 9px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,762) scale(1,-1)">Синяя линия = чистая поверхность</text>
 			<text x="798" y="362" style="font-family: Arial; font-size: 9px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,724) scale(1,-1)">Внешний пол 0; верх борта +120; высокая кромка душевого пола +80. Борт и</text>

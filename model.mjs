@@ -1,11 +1,11 @@
 import * as T from './vendor/three.module.js';
-import {room,fixtures} from './design.mjs?v=20261112-west-green-full';
-import {floorLayout,wallLayout,faces,facePolygon,showerBase,showerHeight,drainLevel} from './tiling-layout.mjs?v=20261112-west-green-full';
+import {createUnderframe,washerPlacement,wallOffset} from './underframe.mjs?v=20261112-sto-bottom-rows';
+import {room,fixtures} from './design.mjs?v=20261112-sto-bottom-rows';
+import {floorLayout,wallLayout,faces,facePolygon,showerBase,showerHeight,drainLevel} from './tiling-layout.mjs?v=20261112-sto-bottom-rows';
 
 export function createBathroom(inputMaterials={}){
   const defaults={light:0xe9e3d9,green:0x557d78,wood:0x82715f,oak:0xa17c4e,ply:0xd7bc8b,white:0xf6f5ef,black:0x181d1e,steel:0xb1b8bb,grout:0xa49f92,core:0x85877f};
   const mat={};for(const [name,color] of Object.entries(defaults))mat[name]=inputMaterials[name]||new T.MeshStandardMaterial({color,roughness:name==='white'?.18:name==='steel'?.34:.72,metalness:name==='steel'?.75:name==='black'?.25:0});
-  mat.frameFinish=inputMaterials.frameFinish||new T.MeshStandardMaterial({color:0x151719,roughness:.62,metalness:.12});
   mat.glass=inputMaterials.glass||new T.MeshPhysicalMaterial({color:0xeef8f5,roughness:.06,transmission:.94,thickness:.006,ior:1.5});
   mat.darkGlass=inputMaterials.darkGlass||new T.MeshPhysicalMaterial({color:0x26383b,metalness:.15,roughness:.08,clearcoat:1});
   mat.led=inputMaterials.led||new T.MeshStandardMaterial({color:0xfff5dc,emissive:0xffe4b3,emissiveIntensity:2});
@@ -67,7 +67,7 @@ export function createBathroom(inputMaterials={}){
     }
   }
 
-  objects.countertop=group('countertop');
+  objects.countertop=group('countertop');objects.countertop.position.x=wallOffset;
   const countertopMesh=box(objects.countertop,600,26,1200,300,887,600,mat.oak);
   objects.basin=group('basin');objects.basin.position.set(320,900,900);
   lathe(objects.basin,[[.1,0],[.48,0],[.70,12],[.86,55],[.96,108],[1,136],[.97,140],[.90,132],[.82,80],[.60,40],[.12,30]],180,250,0,0,0,mat.white);
@@ -83,6 +83,7 @@ export function createBathroom(inputMaterials={}){
   const mirrorFace=box(objects.mirror,2,684,484,15,1550,900,mat.steel);mirrorFace.name='mirror-face';
 
   objects.washer=group('washer');
+  const placement=washerPlacement();objects.washer.position.set(placement.position[0]-60,0,placement.position[2]-80);
   rounded(objects.washer,550,850,600,12,335,0,380,mat.white);
   box(objects.washer,10,110,574,614,766,380,mat.white);
   box(objects.washer,2,48,196,620,775,237,mat.core);
@@ -143,44 +144,20 @@ export function createBathroom(inputMaterials={}){
   for(const z of [190,1010])box(objects.door,22,2120,22,2247,1060,z,mat.oak);
   box(objects.door,22,22,842,2247,2110,600,mat.oak);
 
-  let frame;
+  let frame,importedFrame;
   function buildFrame(H){
-    if(frame){root.remove(frame);frame.traverse(o=>{if(o.geometry)o.geometry.dispose();});frameParts.length=0;}
-    frame=group('frame');frame.userData.wall='west';objects.frame=frame;const top=H-26;
-    function part(id,name){const g=group(id,frame,{name,source:fixtures.frame.source,note:fixtures.frame.note});frameParts.push(g);return g;}
-    function plate(width,length){const s=new T.Shape();s.moveTo(0,0);s.lineTo(width,0);s.lineTo(width,length);s.lineTo(0,length);s.closePath();if(length>80)for(let y=25;y<length-15;y+=50){const h=new T.Path();h.absarc(width/2,y,4.5,0,Math.PI*2,true);s.holes.push(h);}return new T.ExtrudeGeometry(s,{depth:2,bevelEnabled:false,curveSegments:8});}
-    function L(length){const g=new T.Group();const a=new T.Mesh(plate(40,length),mat.frameFinish);a.castShadow=true;g.add(a);const b=new T.Mesh(plate(38,length),mat.frameFinish);b.rotation.y=-Math.PI/2;b.position.set(2,0,2);b.castShadow=true;g.add(b);return g;}
-    let n=0;
-    for(const [z,sz]of [[20,1],[700,1],[1180,-1]])for(const [x,sx]of [[20,1],[580,-1]]){
-      const g=part(`A${++n}`,`Стойка${n} · L40×40×2`),l=L(top-40);l.scale.set(sx,1,sz);l.position.set(x,40,z);g.add(l);
-      const foot=part(`F${n}`,`Опора${n} · изделие подобрать`);cylinder(foot,24,24,10,x+20*sx,5,z+20*sz,mat.black);cylinder(foot,5,5,30,x+20*sx,25,z+20*sz,mat.steel);
-    }
-    function long(id,start,len,x,front,y){const g=part(id,`${id} · продольная связь L40`),l=L(len);l.rotation.x=Math.PI/2;l.scale.x=front?-1:1;l.position.set(x,y,start);g.add(l);return g;}
-    long('B1',20,1160,20,false,top);long('B2',700,480,580,true,top);
-    const optionalBeam=long('B3',60,640,580,true,top);optionalBeam.visible=false;optionalBeam.userData.optionalBeam=true;
-    for(const [i,z,sz]of [[1,20,1],[2,700,1],[3,1180,-1]]){
-      const g=part(`C${i}`,`Поперечина${i} · целый L40`),l=L(560);l.rotation.z=-Math.PI/2;l.scale.z=sz;l.position.set(20,top-2,z);g.add(l);
-      box(g,476,2,36,300,top-1,z+20*sz,mat.frameFinish);
-    }
-    long('D1',700,480,580,true,170);long('D2',700,480,20,false,170);
-    for(const [i,z,sz]of [[1,700,1],[2,1180,-1]]){const g=part(`D${i+2}`,'Нижняя поперечина под полкой'),l=L(560);l.rotation.z=-Math.PI/2;l.scale.z=sz;l.position.set(20,168,z);g.add(l);box(g,476,2,36,300,169,z+20*sz,mat.frameFinish);}
-    const p1=part('P1','Съёмная фанерная полка15');box(p1,476,15,396,300,177.5,940,mat.ply);
-    const p2=part('P2','Задник под раковиной9');box(p2,9,600,400,10,485,940,mat.ply);
-    const p3=part('P3','Торцевая вставка6');box(p3,476,600,6,300,485,1184,mat.ply);
-    for(const [i,z1,y1,z2,y2]of [[1,60,100,700,810],[2,60,810,700,100]]){
-      const p=part(`X${i}`,'Задняя диагональ30×2'),a=new T.Vector3(8,y1,z1),b=new T.Vector3(8,y2,z2),v=b.clone().sub(a),mesh=box(p,2,v.length(),30,0,0,0,mat.frameFinish);mesh.position.copy(a.clone().add(b).multiplyScalar(.5));mesh.quaternion.setFromUnitVectors(new T.Vector3(0,1,0),v.normalize());
-    }
-    for(const z of [40,720,1160])for(const x of [40,560]){const hardware=part(`K-${x}-${z}`,'Болтовой узел · схема');cylinder(hardware,7,7,4,x,top-22,z,mat.steel,'x',6);cylinder(hardware,4,4,16,x+8,top-22,z,mat.steel,'x',12);}
-    return frame;
+    if(importedFrame){root.remove(frame);importedFrame.dispose();frameParts.length=0;}
+    importedFrame=createUnderframe(H);frame=importedFrame.root;
+    frame.name='frame';frame.userData={id:'frame',record:fixtures.frame,wall:'west'};
+    root.add(frame);objects.frame=frame;frameParts.push(...importedFrame.items);
   }
   buildFrame(900);
   function setCounterHeight(H){countertopMesh.position.y=H-13;objects.basin.position.y=H;objects.mixer.position.y=H;buildFrame(H);root.updateMatrixWorld(true);}
-  function setBeam(show){frameParts.find(p=>p.userData.optionalBeam).visible=show;}
   function setExplode(k){
-    for(const p of frameParts)p.position.set(0,0,0);root.updateMatrixWorld(true);
-    for(const p of frameParts){const b=new T.Box3().setFromObject(p),c=b.getCenter(new T.Vector3());frame.worldToLocal(c);p.position.copy(c.sub(new T.Vector3(300,450,600))).multiplyScalar(k);}
+    for(const p of frameParts)p.position.copy(p.userData.base).addScaledVector(p.userData.direction,k);
+    root.updateMatrixWorld(true);
   }
   for(const [id,object]of Object.entries(objects))object.userData.wall=['countertop','basin','mixer','mirror','washer','toilet','frame'].includes(id)?'west':['showerSystem','hygienic'].includes(id)?'south':null;
   root.scale.setScalar(.001);root.updateMatrixWorld(true);
-  return{root,walls,floor,dimensions,objects,frameParts,planes:basePlanes,materials:mat,setCounterHeight,setBeam,setExplode};
+  return{root,walls,floor,dimensions,objects,frameParts,planes:basePlanes,materials:mat,setCounterHeight,setExplode};
 }
