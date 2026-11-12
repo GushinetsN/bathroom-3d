@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
-import {room,fixtures} from './design.mjs?v=20261112-shower-080-120';
-import {floorLayout,wallLayout,faces,facePolygon,showerBase,showerHeight,drainLevel} from './tiling-layout.mjs?v=20261112-shower-080-120';
+import {room,fixtures} from './design.mjs?v=20261112-herringbone-opt3';
+import {floorLayout,wallLayout,faces,facePolygon,showerBase,showerHeight,drainLevel} from './tiling-layout.mjs?v=20261112-herringbone-opt3';
 
 export function createBathroom(inputMaterials={}){
   const defaults={light:0xe9e3d9,green:0x557d78,wood:0x82715f,oak:0xa17c4e,ply:0xd7bc8b,white:0xf6f5ef,black:0x181d1e,steel:0xb1b8bb,grout:0xa49f92,core:0x85877f};
@@ -41,7 +41,7 @@ export function createBathroom(inputMaterials={}){
   for(const face of faces)surface(base,facePolygon(face),((x,z)=>showerHeight(x,z)-.7),mat.grout);
   for(const tile of floorLayout()){
     const parent=tile.kind==='main'?floor:base,height=tile.kind==='main'?0:tile.kind==='cap'?120:showerHeight;
-    const mesh=surface(parent,tile.poly,height,mat.wood,null,tile.kind==='cap'&&tile.width===100);
+    const mesh=surface(parent,tile.poly,height,mat.wood,null,tile.grainVertical||false);
     mesh.userData={id:tile.id,record:{name:'Джордано · '+tile.id,size:[tile.width,tile.depth],source:'Схема раскладки, формат600×200',note:tile.kind==='wet'?'Размеры в плане. Посадку трапа и отметки проверить по паспорту.':'Расчётный рез по номинальному формату.'}};
   }
   const basePlanes={};
@@ -108,7 +108,7 @@ export function createBathroom(inputMaterials={}){
   box(objects.drain,56,1.5,784,2160,4.5,1560,mat.black);
   box(objects.drain,50,2,780,2160,6,1560,mat.steel);
   for(let z=1184;z<1940;z+=20)box(objects.drain,39,1,4,2160,7.1,z,mat.black);
-  objects.drain.position.set(0,drainLevel-7.6,25);
+  objects.drain.position.set(showerBase.drain.x+35-2160,drainLevel-7.6,25);
 
   objects.shower=group('shower');
   const gx=1460,gz=1060,gh=1950;
