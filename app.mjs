@@ -2,8 +2,8 @@ import * as T from './vendor/three.module.js';
 import {OrbitControls} from './vendor/controls/OrbitControls.js';
 import {RoomEnvironment} from './vendor/environments/RoomEnvironment.js';
 import {Reflector} from './vendor/objects/Reflector.js';
-import {createBathroom} from './model.mjs?v=20261113-double-outlet';
-import {fixtures,heightCheck} from './design.mjs?v=20261113-double-outlet';
+import {createBathroom} from './model.mjs?v=20261113-frame-end-screw';
+import {fixtures,heightCheck} from './design.mjs?v=20261113-frame-end-screw';
 
 const $=s=>document.querySelector(s),wrap=$('#canvas-wrap');
 let renderer,model,controls,camera,dirty=true,selection=null,selectionBox=null;
@@ -45,7 +45,8 @@ function dimensions(){
   disposeGroup(dimensionRoot);if(!ui.dims.checked)return;
   const H=Number(ui.height.value)/1000,v=ui.view.value;
   if(v==='frame'){
-    dim([.7,H+.08,0],[.7,H+.08,1.2],'1200 мм');dim([.7,.12,.05],[.7,.12,.6784],'628,4 мм*');dim([.75,0,1.18],[.75,H,1.18],`${Math.round(H*1000)} мм*`,[.13,0,0]);
+    const passage=heightCheck(Number(ui.height.value),850);
+    dim([.7,H+.08,0],[.7,H+.08,1.2],'1200 мм');dim([.7,.12,passage.left/1000],[.7,.12,passage.right/1000],`${passage.width.toFixed(1).replace('.',',')} мм*`);dim([.75,0,1.18],[.75,H,1.18],`${Math.round(H*1000)} мм*`,[.13,0,0]);
   }else if(elevations.includes(v)){
     const L=['north','south'].includes(v)?2.26:2.06;
     if(v==='north'||v==='south'){const z=v==='north'?-.04:2.1;dim([0,2.42,z],[L,2.42,z],`${Math.round(L*1000)} мм`);}

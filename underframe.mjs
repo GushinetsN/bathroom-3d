@@ -1,5 +1,5 @@
-import {createModel} from './underframe/sto-model.mjs';
-import {check} from './underframe/compact-design.mjs';
+import {createModel} from './underframe/sto-model.mjs?v=20261113-frame-end-screw';
+import {check} from './underframe/compact-design.mjs?v=20261113-frame-end-screw';
 
 export const wallOffset=5;
 export function washerPlacement(height=900){
@@ -16,7 +16,7 @@ export function createUnderframe(height=900){
     const a=o.userData.part;
     o.userData.id=a.id;
     o.userData.record={name:a.name,size:a.kind==='angle'?[a.length,30,30]:a.cut||a.size,
-      source:'Подстолье СТО · версия12.11.2026 · прямой нахлёст',
+      source:'Подстолье СТО · версия13.11.2026 · один саморез в торец ножки',
       note:(a.note||'')+' Допустимая нагрузка всей конструкции не подтверждена.'};
   }
   return {...model,items};
