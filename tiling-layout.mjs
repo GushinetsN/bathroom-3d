@@ -1,10 +1,10 @@
-import {room,strip,wallRows} from './design.mjs?v=20261112-sto-bottom-rows';
+import {room,strip,wallRows} from './design.mjs?v=20261113-drain-200';
 
 // Heights and finished curb width were confirmed on 2026-11-12.
-// Drain centre/ends, the 2% fall and fixing dimensions remain design proposals.
+// Nearest drain edge is confirmed 200 mm from the right wall; ends, slope and fixing heights remain provisional.
 export const showerBase={x:1410,z:1010,width:850,depth:1050,curbWidth:100,curbTop:120,floorHigh:80,slope:.02,
-  glass:{x:1460,z:1060,width:800,depth:1000},drain:{x:2120,z:1185,width:70,length:800},
-  note:'Верх борта +120, высокая кромка пола душа +80, ширина борта100. Уклон2% и положение трапа предложены для согласования.'};
+  glass:{x:1460,z:1060,width:800,depth:1000},drain:{x:1990,z:1185,width:70,length:800},
+  note:'Верх борта +120, высокая кромка пола душа +80, ширина борта100. От правой стены до ближайшего края решётки200мм подтверждено13.11.2026; уклон2% и монтажные отметки требуют проверки.'};
 const b=showerBase,d=b.drain;
 export const drainLevel=b.floorHigh-b.slope*(d.x-(b.x+b.curbWidth));
 export function showerHeight(x,z){return drainLevel+b.slope*Math.max(0,d.x-x,x-d.x-d.width,d.z-z,z-d.z-d.length);}
@@ -16,8 +16,8 @@ export function intersect(p,q){for(let i=0;i<q.length&&p.length;i++){const s=q[i
 export const faces=[{id:'W',name:'Основной уклон',a:-1,c:0,k:d.x},{id:'E',name:'Узкая полоса у стены',a:1,c:0,k:-d.x-d.width},{id:'N',name:'Верхний торец',a:0,c:-1,k:d.z},{id:'S',name:'Нижний торец',a:0,c:1,k:-d.z-d.length}];
 export function facePolygon(face,joint=0){let p=rect(b.x+b.curbWidth+5,b.z+b.curbWidth+5,b.width-b.curbWidth-10,b.depth-b.curbWidth-10);for(const f of [...faces,{a:0,c:0,k:joint?5:0}]){if(f===face)continue;const a=f.a-face.a,c=f.c-face.c,k=face.k-f.k-(joint&&f.id?joint/2*Math.hypot(a,c):0);p=clip(p,a,c,k);}return p;}
 function item(id,kind,p,extra={}){const area=polygonArea(p);return{id,kind,poly:p,area,...bounds(p),fullTile:Math.abs(area-(kind==='wall'?180000:120000))<.5,...extra};}
-export const layoutRevision='20261112-sto-bottom-rows';
-export const approvedFloor={selected:'2026-11-12',reference:'bathroom-corner-shift180.png',mainStock:32,totalStock:42,reserveStock:47,
+export const layoutRevision='20261113-drain-200';
+export const approvedFloor={selected:'2026-11-12',reference:'bathroom-corner-shift180.png',mainStock:32,totalStock:43,reserveStock:48,
  note:'Выбранная ёлочка: поворот 180° и сдвиг 7 мм влево/вверх, две целые у угла душа; пристенные полосы 38-44 мм сохранены.'};
 export function herringboneMain(){
   const out=[],main=[[5,5],[2255,5],[2255,1005],[1405,1005],[1405,2055],[5,2055]],L=603,W=203;
@@ -37,11 +37,13 @@ export function floorLayout(){
   const start=b.z+105,finish=2060-5;
   const rows=[{start,size:d.z-1.5-start},...strip(d.length-3,200,188).map(r=>({start:d.z+1.5+r.start,size:r.size})),{start:d.z+d.length+1.5,size:finish-d.z-d.length-1.5}];
   const left=b.x+105,right=2260-5;
-  const cols=[{start:left,size:600},{start:left+603,size:right-left-603}];
-  for(const [r,row]of rows.entries())for(const face of faces)for(const[c,col]of((face.id==='N'||face.id==='S')?[{start:left,size:right-left}]:cols).entries()){
+  // Each side of the channel has its own strip; avoid an unnecessary narrow joint on the wall side.
+  const sideCols=face=>face.id==='W'?strip(d.x-5-left,600,600).map(c=>({start:left+c.start,size:c.size})):
+    face.id==='E'?strip(right-d.x-d.width-5,600,600).map(c=>({start:d.x+d.width+5+c.start,size:c.size})):[{start:left,size:right-left}];
+  for(const [r,row]of rows.entries())for(const face of faces)for(const[c,col]of sideCols(face).entries()){
     let p=intersect(rect(col.start,row.start,col.size,row.size),facePolygon(face,3));
     if(p.length<3||polygonArea(p)<1)continue;
-    out.push(item(`D-${r+1}-${c+1}-${face.id}`,'wet',p,{material:'wood',face:face.id,plane:[face.a*b.slope,face.c*b.slope,drainLevel+face.k*b.slope]}));
+    out.push(item(`D-${r+1}-${face.id==='E'?c+2:c+1}-${face.id}`,'wet',p,{material:'wood',face:face.id,plane:[face.a*b.slope,face.c*b.slope,drainLevel+face.k*b.slope]}));
   }
   return out;
 }
@@ -62,5 +64,5 @@ export function curbFaces(){return[
   {id:'BL',name:'Наружный длинный борт',length:1050,height:120},
   {id:'BN',name:'Наружный короткий борт',length:850,height:120},
   {id:'IL',name:'Внутренняя длинная грань',length:950,height:40},
-  {id:'IN',name:'Внутренняя короткая грань',length:750,height:'40…51'}];}
-export function allLayoutData(){const floor=floorLayout(),walls=Object.fromEntries(['north','west','south','east'].map(s=>[s,wallLayout(s)]));const counts=ts=>({pieces:ts.length,whole:ts.filter(t=>t.fullTile).length,cut:ts.filter(t=>!t.fullTile).length});return{date:'2026-11-12',revision:layoutRevision,approvedFloor,units:'mm',room,showerBase,drainLevel,floor,faces:faces.map(f=>({...f,poly:facePolygon(f)})),walls,profiles:Object.fromEntries(['north','west','south','east'].map(s=>[s,wallProfile(s)])),curbFaces:curbFaces(),counts:{main:counts(floor.filter(t=>t.kind==='main')),wet:counts(floor.filter(t=>t.kind==='wet')),cap:counts(floor.filter(t=>t.kind==='cap')),walls:counts(Object.values(walls).flat())},status:'Выбранная ёлочка90 с двумя целыми у угла душа; прямые ряды в душе, горизонтальные стены; номинальные форматы, монтаж проверить.'};}
+  {id:'IN',name:'Внутренняя короткая грань',length:750,height:'40…'+Math.ceil(b.curbTop-showerHeight(d.x,b.z+b.curbWidth))}];}
+export function allLayoutData(){const floor=floorLayout(),walls=Object.fromEntries(['north','west','south','east'].map(s=>[s,wallLayout(s)]));const counts=ts=>({pieces:ts.length,whole:ts.filter(t=>t.fullTile).length,cut:ts.filter(t=>!t.fullTile).length});return{date:'2026-11-13',revision:layoutRevision,approvedFloor,units:'mm',room,showerBase,drainLevel,floor,faces:faces.map(f=>({...f,poly:facePolygon(f)})),walls,profiles:Object.fromEntries(['north','west','south','east'].map(s=>[s,wallProfile(s)])),curbFaces:curbFaces(),counts:{main:counts(floor.filter(t=>t.kind==='main')),wet:counts(floor.filter(t=>t.kind==='wet')),cap:counts(floor.filter(t=>t.kind==='cap')),walls:counts(Object.values(walls).flat())},status:'Выбранная ёлочка90 с двумя целыми у угла душа; прямые ряды в душе, горизонтальные стены; номинальные форматы, монтаж проверить.'};}

@@ -12,10 +12,10 @@
 		<g transform="">
 			<rect x="0" y="0" width="1190.5511811023623" height="841.8897637795277" style="stroke: none; stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
 			<text x="42" y="799.8897637795277" style="font-family: Arial-Bold; font-size: 22px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1599) scale(1,-1)">Душевая площадка - пол, борт и трап</text>
-			<text x="42" y="777.8897637795277" style="font-family: Arial; font-size: 9px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,1555) scale(1,-1)">Подтверждено: борт +120, пол +80, ширина борта 100. Уклон и привязка решётки - проектное предложение.</text>
+			<text x="42" y="777.8897637795277" style="font-family: Arial; font-size: 9px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,1555) scale(1,-1)">Подтверждено: борт +120, пол +80, ширина100; трап200мм до края от стены. Уклон и монтажные отметки предварительные.</text>
 			<path d="M 42,761.889764 L 1148.551181,761.889764 Z" style="stroke: rgb(60%,67%,65%); stroke-linecap: butt; stroke-width: 0.7;"/>
 			<path d="M 42,36 L 1148.551181,36 Z" style="stroke: rgb(60%,67%,65%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<text x="42" y="23" style="font-family: Arial; font-size: 7px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">СХЕМА РАСКЛАДКИ  |  12.11.2026  |  Размеры в мм. Проверить обмер и калибр перед резкой.</text>
+			<text x="42" y="23" style="font-family: Arial; font-size: 7px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">СХЕМА РАСКЛАДКИ  |  13.11.2026  |  Размеры в мм. Проверить обмер и калибр перед резкой.</text>
 			<text x="1132.9847748523623" y="23" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">6 / 8</text>
 			<path d="M 82,710 L 507,710 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 1;"/>
 			<path d="M 507,710 L 507,185 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 1;"/>
@@ -37,69 +37,71 @@
 			<g transform=" matrix(0,1,-1,0,469.75,685)">
 				<text x="-21.931640625" y="0" style="font-family: Arial; font-size: 6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,0) scale(1,-1)">B-N2  139 × 100</text>
 			</g>
-			<polygon points="134.5 657.5, 400.9393 657.5, 434.5 623.9393, 434.5 623.25, 134.5 623.25" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<text x="263.98543208090337" y="643.0306675860544" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1286) scale(1,-1)">D-1-1-W</text>
-			<text x="262.66292231527837" y="633.0306675860544" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1266) scale(1,-1)">600 × 68,5</text>
-			<polygon points="504.5 653.9393, 504.5 623.25, 474.5 623.25, 474.5 623.9393" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<text x="482.7287045310069" y="636.4848278436639" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1272) scale(1,-1)">D-1-2-E</text>
-			<polygon points="403.0607 657.5, 504.5 657.5, 504.5 656.0607, 473.4393 625, 435.5607 625" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<text x="442.74343752863007" y="646.7453376016922" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1293) scale(1,-1)">D-1-1-N</text>
-			<text x="439.07654299738005" y="636.7453376016922" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1273) scale(1,-1)">202,88 × 65</text>
-			<polygon points="134.5 621.75, 434.5 621.75, 434.5 527.75, 134.5 527.75" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<text x="272.034765625" y="577.75" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1155) scale(1,-1)">D-2-1-W</text>
-			<text x="271.51796875" y="567.75" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1135) scale(1,-1)">600 × 188</text>
-			<polygon points="474.5 621.75, 504.5 621.75, 504.5 527.75, 474.5 527.75" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<g transform=" matrix(0,1,-1,0,489.5,574.75)">
-				<text x="-23.9296875" y="0" style="font-family: Arial; font-size: 6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,0) scale(1,-1)">D-2-2-E  60 × 188</text>
-			</g>
-			<polygon points="134.5 526.25, 434.5 526.25, 434.5 426.25, 134.5 426.25" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<text x="268.707373046875" y="479.25" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,958) scale(1,-1)">D-3-1-W Ц</text>
-			<text x="274.48876953125" y="469.25" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,938) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="474.5 526.25, 504.5 526.25, 504.5 426.25, 474.5 426.25" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<g transform=" matrix(0,1,-1,0,489.5,476.25)">
-				<text x="-23.9296875" y="0" style="font-family: Arial; font-size: 6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,0) scale(1,-1)">D-3-2-E  60 × 200</text>
-			</g>
-			<polygon points="134.5 424.75, 434.5 424.75, 434.5 324.75, 134.5 324.75" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<text x="268.707373046875" y="377.75" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,755) scale(1,-1)">D-4-1-W Ц</text>
-			<text x="274.48876953125" y="367.75" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,735) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="474.5 424.75, 504.5 424.75, 504.5 324.75, 474.5 324.75" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<g transform=" matrix(0,1,-1,0,489.5,374.75)">
-				<text x="-23.9296875" y="0" style="font-family: Arial; font-size: 6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,0) scale(1,-1)">D-4-2-E  60 × 200</text>
-			</g>
-			<polygon points="134.5 323.25, 434.5 323.25, 434.5 223.25, 134.5 223.25" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<text x="268.707373046875" y="276.25" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,552) scale(1,-1)">D-5-1-W Ц</text>
-			<text x="274.48876953125" y="266.25" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,532) scale(1,-1)">ЦЕЛАЯ</text>
-			<polygon points="474.5 323.25, 504.5 323.25, 504.5 223.25, 474.5 223.25" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<g transform=" matrix(0,1,-1,0,489.5,273.25)">
-				<text x="-23.9296875" y="0" style="font-family: Arial; font-size: 6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,0) scale(1,-1)">D-5-2-E  60 × 200</text>
-			</g>
-			<polygon points="134.5 221.75, 434.5 221.75, 434.5 221.0607, 400.9393 187.5, 134.5 187.5" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<text x="263.9854320809036" y="207.96933241394572" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,415) scale(1,-1)">D-6-1-W</text>
-			<text x="262.6629223152786" y="197.96933241394572" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,395) scale(1,-1)">600 × 68,5</text>
-			<polygon points="474.5 221.75, 504.5 221.75, 504.5 191.0607, 474.5 221.0607" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<text x="482.72870453101166" y="214.5151721563135" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,429) scale(1,-1)">D-6-2-E</text>
-			<polygon points="504.5 188.9393, 504.5 187.5, 403.0607 187.5, 435.5607 220, 473.4393 220" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<text x="442.9255176067719" y="204.2546623983061" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,408) scale(1,-1)">D-6-1-S</text>
-			<text x="439.07654299739687" y="194.2546623983061" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,388) scale(1,-1)">202,88 × 65</text>
+			<polygon points="134.5 657.5, 335.9393 657.5, 369.5 623.9393, 369.5 623.25, 134.5 623.25" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="231.53657530414753" y="642.928261505893" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1285) scale(1,-1)">D-1-1-W</text>
+			<text x="230.21406553852253" y="632.928261505893" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1265) scale(1,-1)">470 × 68,5</text>
+			<polygon points="443.0607 657.5, 504.5 657.5, 504.5 623.25, 409.5 623.25, 409.5 623.9393" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="453.048969588452" y="642.1321126137424" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1284) scale(1,-1)">D-1-2-E</text>
+			<text x="450.81283677595195" y="632.1321126137424" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1264) scale(1,-1)">190 × 68,5</text>
+			<polygon points="338.0607 657.5, 440.9393 657.5, 408.4393 625, 370.5607 625" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="377.7663085937384" y="646.751349379195" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1293) scale(1,-1)">D-1-1-N</text>
+			<text x="374.0994140624884" y="636.751349379195" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1273) scale(1,-1)">205,76 × 65</text>
+			<polygon points="134.5 621.75, 369.5 621.75, 369.5 527.75, 134.5 527.75" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="239.534765625" y="577.75" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1155) scale(1,-1)">D-2-1-W</text>
+			<text x="239.01796875" y="567.75" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1135) scale(1,-1)">470 × 188</text>
+			<polygon points="409.5 621.75, 504.5 621.75, 504.5 527.75, 409.5 527.75" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="445.448388671875" y="577.75" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1155) scale(1,-1)">D-2-2-E</text>
+			<text x="444.01796875" y="567.75" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1135) scale(1,-1)">190 × 188</text>
+			<polygon points="134.5 526.25, 369.5 526.25, 369.5 426.25, 134.5 426.25" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="239.534765625" y="479.25" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,958) scale(1,-1)">D-3-1-W</text>
+			<text x="239.01796875" y="469.25" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,938) scale(1,-1)">470 × 200</text>
+			<polygon points="409.5 526.25, 504.5 526.25, 504.5 426.25, 409.5 426.25" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="445.448388671875" y="479.25" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,958) scale(1,-1)">D-3-2-E</text>
+			<text x="444.01796875" y="469.25" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,938) scale(1,-1)">190 × 200</text>
+			<polygon points="134.5 424.75, 369.5 424.75, 369.5 324.75, 134.5 324.75" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="239.534765625" y="377.75" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,755) scale(1,-1)">D-4-1-W</text>
+			<text x="239.01796875" y="367.75" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,735) scale(1,-1)">470 × 200</text>
+			<polygon points="409.5 424.75, 504.5 424.75, 504.5 324.75, 409.5 324.75" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="445.448388671875" y="377.75" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,755) scale(1,-1)">D-4-2-E</text>
+			<text x="444.01796875" y="367.75" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,735) scale(1,-1)">190 × 200</text>
+			<polygon points="134.5 323.25, 369.5 323.25, 369.5 223.25, 134.5 223.25" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="239.534765625" y="276.25" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,552) scale(1,-1)">D-5-1-W</text>
+			<text x="239.01796875" y="266.25" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,532) scale(1,-1)">470 × 200</text>
+			<polygon points="409.5 323.25, 504.5 323.25, 504.5 223.25, 409.5 223.25" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="445.448388671875" y="276.25" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,552) scale(1,-1)">D-5-2-E</text>
+			<text x="444.01796875" y="266.25" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,532) scale(1,-1)">190 × 200</text>
+			<polygon points="134.5 221.75, 369.5 221.75, 369.5 221.0607, 335.9393 187.5, 134.5 187.5" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="231.53657530414856" y="208.07173849410822" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,416) scale(1,-1)">D-6-1-W</text>
+			<text x="230.21406553852356" y="198.07173849410822" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,396) scale(1,-1)">470 × 68,5</text>
+			<polygon points="409.5 221.75, 504.5 221.75, 504.5 187.5, 443.0607 187.5, 409.5 221.0607" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="453.0489695884597" y="208.86788738625387" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,417) scale(1,-1)">D-6-2-E</text>
+			<text x="450.8128367759597" y="198.86788738625387" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,397) scale(1,-1)">190 × 68,5</text>
+			<polygon points="440.9393 187.5, 338.0607 187.5, 370.5607 220, 408.4393 220" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<text x="377.94838867188844" y="204.24865062080028" style="font-family: Arial-Bold; font-size: 6.6px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,408) scale(1,-1)">D-6-1-S</text>
+			<text x="374.0994140625134" y="194.24865062080028" style="font-family: Arial; font-size: 5.8px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,388) scale(1,-1)">205,76 × 65</text>
 			<path d="M 107,685 L 507,685 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 5, 3;"/>
 			<path d="M 507,685 L 507,185 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 5, 3;"/>
 			<path d="M 507,185 L 107,185 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 5, 3;"/>
 			<path d="M 107,185 L 107,685 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 5, 3;"/>
-			<rect x="437.0" y="222.5" width="35.0" height="400.0" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(50%,56%,58%); fill-rule: evenodd;"/>
-			<g transform=" matrix(0,1,-1,0,454.5,422.5)">
+			<rect x="372.0" y="222.5" width="35.0" height="400.0" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(50%,56%,58%); fill-rule: evenodd;"/>
+			<g transform=" matrix(0,1,-1,0,389.5,422.5)">
 				<text x="-23.6796875" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,0) scale(1,-1)">TIM 800 × 70</text>
 			</g>
-			<path d="M 402,657.5 L 437,622.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
-			<path d="M 437,222.5 L 402,187.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
-			<path d="M 504.5,190 L 472,222.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
-			<path d="M 472,622.5 L 504.5,655 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
-			<path d="M 504.5,655 L 472,622.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
-			<path d="M 437,622.5 L 402,657.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
-			<path d="M 402,187.5 L 437,222.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
-			<path d="M 472,222.5 L 504.5,190 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
-			<path d="M 202,422.5 L 392,422.5 Z" style="stroke: rgb(9%,49%,60%); stroke-linecap: butt; stroke-width: 1.2;"/>
-			<polygon points="392 422.5, 384.6315 425.6153, 384.6315 419.3847" style="stroke: none; stroke-linecap: butt; stroke-width: 0.5; fill: rgb(9%,49%,60%); fill-rule: evenodd;"/>
-			<text x="288.744873046875" y="430.5" style="font-family: Arial-Bold; font-size: 9px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,861) scale(1,-1)">2%*</text>
+			<path d="M 337,657.5 L 372,622.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
+			<path d="M 372,222.5 L 337,187.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
+			<path d="M 442,187.5 L 407,222.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
+			<path d="M 407,622.5 L 442,657.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
+			<path d="M 442,657.5 L 407,622.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
+			<path d="M 372,622.5 L 337,657.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
+			<path d="M 337,187.5 L 372,222.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
+			<path d="M 407,222.5 L 442,187.5 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1.3; stroke-dasharray: 4, 2;"/>
+			<path d="M 177,422.5 L 357,422.5 Z" style="stroke: rgb(9%,49%,60%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="357 422.5, 349.6315 425.6153, 349.6315 419.3847" style="stroke: none; stroke-linecap: butt; stroke-width: 0.5; fill: rgb(9%,49%,60%); fill-rule: evenodd;"/>
+			<text x="258.744873046875" y="430.5" style="font-family: Arial-Bold; font-size: 9px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,861) scale(1,-1)">2%*</text>
+			<path d="M 407,725 L 507,725 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 404,721 L 410,729 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 504,721 L 510,729 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="415.92578125" y="732" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,1464) scale(1,-1)">200 - до края решётки</text>
 			<path d="M 82,738 L 507,738 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
 			<path d="M 79,734 L 85,742 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
 			<path d="M 504,734 L 510,742 Z" style="stroke: rgb(38%,45%,45%); stroke-linecap: butt; stroke-width: 0.6;"/>
@@ -121,27 +123,28 @@
 			<text x="595" y="710" style="font-family: Arial; font-size: 10px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1420) scale(1,-1)">План площадки</text>
 			<text x="595" y="690" style="font-family: Arial; font-size: 10px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1380) scale(1,-1)">Наружный размер 850 × 1050. Ограждение 800 × 1000 по середине борта. Внутри борта около 750 × 950; плитка</text>
 			<text x="595" y="675" style="font-family: Arial; font-size: 10px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1350) scale(1,-1)">начинается с примыкания 5 мм.</text>
-			<text x="595" y="649" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1298) scale(1,-1)">Подгонка под целую плитку</text>
-			<text x="595" y="630" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1260) scale(1,-1)">Ось трапа105 мм от правой стены - сдвиг5 мм от прежней схемы. Слева помещается целая плитка600 мм с примыканиями5</text>
-			<text x="595" y="616" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1232) scale(1,-1)">мм; справа полоса60 мм. По длине14 деталей вместо20, три целые600×200. Ёлочка остаётся на основном полу.</text>
+			<text x="595" y="649" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1298) scale(1,-1)">Трап200мм от стены</text>
+			<text x="595" y="630" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1260) scale(1,-1)">200мм от правой стены до ближайшего края решётки; до оси235мм. Слева плановая ширина плитки470мм, справа190мм с</text>
+			<text x="595" y="616" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1232) scale(1,-1)">примыканиями5мм. Внутри14деталей с подрезкой; направление плитки сохранено. Основная ёлочка и две целые у угла душа</text>
+			<text x="595" y="602" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1204) scale(1,-1)">не меняются.</text>
 			<text x="595" y="505" style="font-family: Arial-Bold; font-size: 12px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,1010) scale(1,-1)">А-А: поперёк площадки через середину трапа</text>
 			<polygon points="625 340, 675 340, 675 460, 625 460" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="675 340, 1050 340, 1050 409.2, 1015 407.8, 980 407.8, 675 420" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(92%,90%,87%); fill-rule: evenodd;"/>
-			<path d="M 980,407.8 L 1015,407.8 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="675 340, 1050 340, 1050 414.4, 950 410.4, 915 410.4, 675 420" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(92%,90%,87%); fill-rule: evenodd;"/>
+			<path d="M 915,410.4 L 950,410.4 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 3;"/>
 			<path d="M 650,460 L 650,495 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 2;"/>
 			<text x="594.4755859375" y="468" style="font-family: Arial-Bold; font-size: 10px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,936) scale(1,-1)">+120</text>
 			<text x="690.0" y="430" style="font-family: Arial-Bold; font-size: 10px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,860) scale(1,-1)">+80*</text>
-			<text x="982.90283203125" y="387.8" style="font-family: Arial; font-size: 10px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,775) scale(1,-1)">+67,8*</text>
+			<text x="917.90283203125" y="390.4" style="font-family: Arial; font-size: 10px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,780) scale(1,-1)">+70,4*</text>
 			<text x="611.4384765625" y="340" style="font-family: Arial; font-size: 10px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,680) scale(1,-1)">0</text>
-			<path d="M 720,440 L 932.5,431 Z" style="stroke: rgb(9%,49%,60%); stroke-linecap: butt; stroke-width: 1.2;"/>
-			<polygon points="932.5 431, 925.2699 434.4244, 925.0063 428.1992" style="stroke: none; stroke-linecap: butt; stroke-width: 0.5; fill: rgb(9%,49%,60%); fill-rule: evenodd;"/>
-			<text x="817.994873046875" y="443.5" style="font-family: Arial-Bold; font-size: 9px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,887) scale(1,-1)">2%*</text>
+			<path d="M 720,440 L 895,431 Z" style="stroke: rgb(9%,49%,60%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="895 431, 887.8012 434.4897, 887.4812 428.2672" style="stroke: none; stroke-linecap: butt; stroke-width: 0.5; fill: rgb(9%,49%,60%); fill-rule: evenodd;"/>
+			<text x="799.244873046875" y="443.5" style="font-family: Arial-Bold; font-size: 9px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,887) scale(1,-1)">2%*</text>
 			<text x="625" y="308" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,616) scale(1,-1)">Вертикаль на разрезе увеличена вдвое относительно горизонтали.</text>
 			<text x="595" y="274" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,548) scale(1,-1)">Резы по красным линиям</text>
 			<text x="595" y="255" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,510) scale(1,-1)">Основной уклон к трапу дополнен узкой полосой у стены и торцевыми уклонами. Плитку разделять по границам плоскостей;</text>
 			<text x="595" y="241" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,482) scale(1,-1)">не перегибать целую плитку клеевым слоем.</text>
 			<text x="595" y="216" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,432) scale(1,-1)">Важно перед работой</text>
-			<text x="595" y="197" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,394) scale(1,-1)">+80 принято у высокой кромки. При2% до решётки перепад12,2 мм; отметка+67,8. Высота корпуса TIM неизвестна: проверить,</text>
+			<text x="595" y="197" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,394) scale(1,-1)">+80 принято у высокой кромки. При2% до решётки перепад9,6 мм; отметка+70,4. Высота корпуса TIM неизвестна: проверить,</text>
 			<text x="595" y="183" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,366) scale(1,-1)">помещаются ли трап и выпуск. Гидроизоляцию, профиль борта и его внутренний уклон решает монтажный узел. Размеры</text>
 			<text x="595" y="169" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,338) scale(1,-1)">целых плиток номинальные; фактический калибр сверить до фиксации трапа.</text>
 			<text x="82" y="133" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,266) scale(1,-1)">Пунктир чёрный: линия ограждения. Пунктир красный: рез по перелому уклона.</text>

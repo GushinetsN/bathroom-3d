@@ -15,7 +15,7 @@
 			<text x="42" y="777.8897637795277" style="font-family: Arial; font-size: 9px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,1555) scale(1,-1)">Выбрано 12.11.2026: две целые плитки у угла душа, пристенные подрезки сохранены. Масштаб 1:10, A3 100%.</text>
 			<path d="M 42,761.889764 L 1148.551181,761.889764 Z" style="stroke: rgb(60%,67%,65%); stroke-linecap: butt; stroke-width: 0.7;"/>
 			<path d="M 42,36 L 1148.551181,36 Z" style="stroke: rgb(60%,67%,65%); stroke-linecap: butt; stroke-width: 0.6;"/>
-			<text x="42" y="23" style="font-family: Arial; font-size: 7px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">СХЕМА РАСКЛАДКИ  |  12.11.2026  |  Размеры в мм. Проверить обмер и калибр перед резкой.</text>
+			<text x="42" y="23" style="font-family: Arial; font-size: 7px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">СХЕМА РАСКЛАДКИ  |  13.11.2026  |  Размеры в мм. Проверить обмер и калибр перед резкой.</text>
 			<text x="1132.9847748523623" y="23" style="font-family: Arial; font-size: 8px;fill: rgb(38%,45%,45%); stroke:none;" transform="translate(0,46) scale(1,-1)">1 / 8</text>
 			<rect x="76.0" y="134.06299212598412" width="640.6299212598426" height="583.9370078740159" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(96%,96%,94%); fill-rule: evenodd;"/>
 			<polygon points="645.1969 433.1181, 475.1181 433.1181, 475.1181 489.811, 645.1969 489.811" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(72%,83%,78%); fill-rule: evenodd;"/>
@@ -147,20 +147,20 @@
 			<polygon points="475.685 260.7717, 504.0315 260.7717, 504.0315 135.4803, 475.685 135.4803" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
 			<polygon points="504.8819 431.7008, 674.9606 431.7008, 674.9606 403.3543, 504.8819 403.3543" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
 			<polygon points="675.811 431.7008, 715.2126 431.7008, 715.2126 403.3543, 675.811 403.3543" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="505.4488 401.937, 656.501 401.937, 675.5276 382.9105, 675.5276 382.5197, 505.4488 382.5197" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="715.2126 399.9184, 715.2126 382.5197, 698.2047 382.5197, 698.2047 382.9105" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="657.7037 401.937, 715.2126 401.937, 715.2126 401.121, 697.6034 383.5118, 676.1289 383.5118" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="505.4488 381.6693, 675.5276 381.6693, 675.5276 328.378, 505.4488 328.378" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="698.2047 381.6693, 715.2126 381.6693, 715.2126 328.378, 698.2047 328.378" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="505.4488 327.5276, 675.5276 327.5276, 675.5276 270.8346, 505.4488 270.8346" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="698.2047 327.5276, 715.2126 327.5276, 715.2126 270.8346, 698.2047 270.8346" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="505.4488 269.9843, 675.5276 269.9843, 675.5276 213.2913, 505.4488 213.2913" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="698.2047 269.9843, 715.2126 269.9843, 715.2126 213.2913, 698.2047 213.2913" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="505.4488 212.4409, 675.5276 212.4409, 675.5276 155.748, 505.4488 155.748" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="698.2047 212.4409, 715.2126 212.4409, 715.2126 155.748, 698.2047 155.748" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="505.4488 154.8976, 675.5276 154.8976, 675.5276 154.5068, 656.501 135.4803, 505.4488 135.4803" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="698.2047 154.8976, 715.2126 154.8976, 715.2126 137.499, 698.2047 154.5068" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
-			<polygon points="715.2126 136.2963, 715.2126 135.4803, 657.7037 135.4803, 676.1289 153.9055, 697.6034 153.9055" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="505.4488 401.937, 619.6506 401.937, 638.6772 382.9105, 638.6772 382.5197, 505.4488 382.5197" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="680.3808 401.937, 715.2126 401.937, 715.2126 382.5197, 661.3543 382.5197, 661.3543 382.9105" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="620.8533 401.937, 679.1782 401.937, 660.753 383.5118, 639.2785 383.5118" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="505.4488 381.6693, 638.6772 381.6693, 638.6772 328.378, 505.4488 328.378" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="661.3543 381.6693, 715.2126 381.6693, 715.2126 328.378, 661.3543 328.378" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="505.4488 327.5276, 638.6772 327.5276, 638.6772 270.8346, 505.4488 270.8346" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="661.3543 327.5276, 715.2126 327.5276, 715.2126 270.8346, 661.3543 270.8346" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="505.4488 269.9843, 638.6772 269.9843, 638.6772 213.2913, 505.4488 213.2913" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="661.3543 269.9843, 715.2126 269.9843, 715.2126 213.2913, 661.3543 213.2913" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="505.4488 212.4409, 638.6772 212.4409, 638.6772 155.748, 505.4488 155.748" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="661.3543 212.4409, 715.2126 212.4409, 715.2126 155.748, 661.3543 155.748" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="505.4488 154.8976, 638.6772 154.8976, 638.6772 154.5068, 619.6506 135.4803, 505.4488 135.4803" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="661.3543 154.8976, 715.2126 154.8976, 715.2126 135.4803, 680.3808 135.4803, 661.3543 154.5068" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
+			<polygon points="679.1782 135.4803, 620.8533 135.4803, 639.2785 153.9055, 660.753 153.9055" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35; fill: rgb(87%,78%,67%); fill-rule: evenodd;"/>
 			<path d="M 475.685039,431.700787 L 716.629921,431.700787 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1;"/>
 			<path d="M 716.629921,431.700787 L 716.629921,134.062992 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1;"/>
 			<path d="M 716.629921,134.062992 L 475.685039,134.062992 Z" style="stroke: rgb(69%,37%,21%); stroke-linecap: butt; stroke-width: 1;"/>
@@ -169,26 +169,26 @@
 			<path d="M 716.629921,417.527559 L 716.629921,134.062992 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 5, 3;"/>
 			<path d="M 716.629921,134.062992 L 489.858268,134.062992 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 5, 3;"/>
 			<path d="M 489.858268,134.062992 L 489.858268,417.527559 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 5, 3;"/>
-			<rect x="676.9448818897639" y="155.32283464566922" width="19.842519685039406" height="226.77165354330714" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(56%,60%,61%); fill-rule: evenodd;"/>
-			<path d="M 679.496063,367.92126 L 694.23622,367.92126 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,353.748031 L 694.23622,353.748031 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,339.574803 L 694.23622,339.574803 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,325.401575 L 694.23622,325.401575 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,311.228346 L 694.23622,311.228346 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,297.055118 L 694.23622,297.055118 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,282.88189 L 694.23622,282.88189 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,268.708661 L 694.23622,268.708661 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,254.535433 L 694.23622,254.535433 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,240.362205 L 694.23622,240.362205 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,226.188976 L 694.23622,226.188976 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,212.015748 L 694.23622,212.015748 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,197.84252 L 694.23622,197.84252 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,183.669291 L 694.23622,183.669291 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
-			<path d="M 679.496063,169.496063 L 694.23622,169.496063 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<rect x="640.0944881889765" y="155.32283464566922" width="19.842519685039406" height="226.77165354330714" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(56%,60%,61%); fill-rule: evenodd;"/>
+			<path d="M 642.645669,367.92126 L 657.385827,367.92126 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,353.748031 L 657.385827,353.748031 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,339.574803 L 657.385827,339.574803 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,325.401575 L 657.385827,325.401575 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,311.228346 L 657.385827,311.228346 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,297.055118 L 657.385827,297.055118 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,282.88189 L 657.385827,282.88189 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,268.708661 L 657.385827,268.708661 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,254.535433 L 657.385827,254.535433 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,240.362205 L 657.385827,240.362205 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,226.188976 L 657.385827,226.188976 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,212.015748 L 657.385827,212.015748 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,197.84252 L 657.385827,197.84252 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,183.669291 L 657.385827,183.669291 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
+			<path d="M 642.645669,169.496063 L 657.385827,169.496063 Z" style="stroke: rgb(14%,24%,25%); stroke-linecap: butt; stroke-width: 0.35;"/>
 			<text x="568.3609359621064" y="289.9685039370078" style="font-family: Arial-Bold; font-size: 10px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,579) scale(1,-1)">Душ: лист 6</text>
-			<path d="M 560.724409,258.787402 L 648.598425,258.787402 Z" style="stroke: rgb(9%,49%,60%); stroke-linecap: butt; stroke-width: 1.2;"/>
-			<polygon points="648.5984 258.7874, 641.2299 261.9027, 641.2299 255.6721" style="stroke: none; stroke-linecap: butt; stroke-width: 0.5; fill: rgb(9%,49%,60%); fill-rule: evenodd;"/>
-			<text x="596.4062903697097" y="266.7874015748031" style="font-family: Arial-Bold; font-size: 9px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,533) scale(1,-1)">2%*</text>
+			<path d="M 532.377953,258.787402 L 633.007874,258.787402 Z" style="stroke: rgb(9%,49%,60%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="633.0079 258.7874, 625.6394 261.9027, 625.6394 255.6721" style="stroke: none; stroke-linecap: butt; stroke-width: 0.5; fill: rgb(9%,49%,60%); fill-rule: evenodd;"/>
+			<text x="574.4377864327018" y="266.7874015748031" style="font-family: Arial-Bold; font-size: 9px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,533) scale(1,-1)">2%*</text>
 			<text x="576.8516989880661" y="213.43307086614163" style="font-family: Arial; font-size: 9px;fill: rgb(9%,49%,60%); stroke:none;" transform="translate(0,426) scale(1,-1)">+80*</text>
 			<g transform=" matrix(0,1,-1,0,488.440945,289.968504)">
 				<text x="-9.009765625" y="0" style="font-family: Arial; font-size: 8px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,0) scale(1,-1)">+120</text>
@@ -241,17 +241,18 @@
 			<text x="798" y="465" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,930) scale(1,-1)">Пристенные полосы 38-44 мм сохранены.</text>
 			<text x="798" y="438" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,876) scale(1,-1)">Расход по проверенному раскрою</text>
 			<text x="798" y="419" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,838) scale(1,-1)">Основной пол: 32 исходные плитки / 3,84 м². Вместе с душем и всеми</text>
-			<text x="798" y="405" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,810) scale(1,-1)">гранями борта: 42 / 5,04 м². С резервом 10%: 47 / 5,64 м². Обрезки</text>
+			<text x="798" y="405" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,810) scale(1,-1)">гранями борта: 43 / 5,16 м². С резервом 10%: 48 / 5,76 м². Обрезки</text>
 			<text x="798" y="391" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,782) scale(1,-1)">используются совместно; пропил 3 мм. Количество предварительное, без</text>
 			<text x="798" y="377" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,754) scale(1,-1)">округления до коробок.</text>
 			<text x="798" y="350" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,700) scale(1,-1)">Внутри душа - прямые ряды</text>
-			<text x="798" y="331" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,662) scale(1,-1)">Здесь 14 деталей, включая 3 целые 600×200. Направление и границы</text>
-			<text x="798" y="317" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,634) scale(1,-1)">уклонов сохранены. Верх борта шириной 100 мм требует подрезки.</text>
-			<text x="798" y="303" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,606) scale(1,-1)">Маркировка F совпадает с отдельной картой раскроя.</text>
-			<text x="798" y="276" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,552) scale(1,-1)">* Проектное предложение</text>
-			<text x="798" y="257" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,514) scale(1,-1)">Решётка трапа +67,8 мм, ось105 мм от правой стены. Это сдвиг всего5 мм к</text>
-			<text x="798" y="243" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,486) scale(1,-1)">центру душа ради целых плиток. Монтажную высоту, фланцы, выпуск и</text>
-			<text x="798" y="229" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,458) scale(1,-1)">дверную привязку проверить на месте.</text>
+			<text x="798" y="331" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,662) scale(1,-1)">После переноса трапа здесь 14 деталей с подрезкой, целых600×200 нет. На</text>
+			<text x="798" y="317" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,634) scale(1,-1)">каждой стороне решётки единая полоса без лишнего продольного шва. Верх</text>
+			<text x="798" y="303" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,606) scale(1,-1)">борта шириной 100 мм требует подрезки. Маркировка F совпадает с</text>
+			<text x="798" y="289" style="font-family: Arial; font-size: 9px;fill: rgb(14%,24%,25%); stroke:none;" transform="translate(0,578) scale(1,-1)">отдельной картой раскроя.</text>
+			<text x="798" y="262" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,524) scale(1,-1)">* Проектное предложение</text>
+			<text x="798" y="243" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,486) scale(1,-1)">От правой стены до ближайшего края решётки200 мм, до оси235 мм —</text>
+			<text x="798" y="229" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,458) scale(1,-1)">подтверждено13.11.2026. При условном уклоне2% решётка на+70,4 мм.</text>
+			<text x="798" y="215" style="font-family: Arial; font-size: 9px;fill: rgb(69%,37%,21%); stroke:none;" transform="translate(0,430) scale(1,-1)">Монтажную высоту, фланцы, выпуск и дверную привязку проверить на месте.</text>
 		</g>
 	</g>
 </svg>
