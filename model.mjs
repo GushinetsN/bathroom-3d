@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {createUnderframe,washerPlacement,wallOffset} from './underframe.mjs?v=20261112-sto-bottom-rows';
-import {room,fixtures} from './design.mjs?v=20261112-sto-bottom-rows';
+import {room,fixtures} from './design.mjs?v=20261113-towel-warmer';
 import {floorLayout,wallLayout,faces,facePolygon,showerBase,showerHeight,drainLevel} from './tiling-layout.mjs?v=20261112-sto-bottom-rows';
 
 export function createBathroom(inputMaterials={}){
@@ -82,6 +82,21 @@ export function createBathroom(inputMaterials={}){
   box(objects.mirror,12,700,500,6,1550,900,mat.led);
   const mirrorFace=box(objects.mirror,2,684,484,15,1550,900,mat.steel);mirrorFace.name='mirror-face';
 
+  objects.towelWarmer=group('towelWarmer');objects.towelWarmer.position.set(...fixtures.towelWarmer.position);
+  const warmerBody=new T.Group();warmerBody.name='towel-warmer-body';objects.towelWarmer.add(warmerBody);
+  for(const x of [-209,209]){
+    rounded(warmerBody,32,300,35,4,x,0,82.5,mat.black);
+    for(const y of [45,255]){
+      cylinder(warmerBody,14,14,4,x,y,2,mat.black,'z');
+      cylinder(warmerBody,7,7,61,x,y,34.5,mat.black,'z');
+    }
+  }
+  for(const y of [35,112,188,265])rounded(warmerBody,418,18,22,5,0,y-9,88,mat.black);
+  rounded(warmerBody,14,36,2,2,-209,18,99,mat.core);
+  box(warmerBody,5,9,1,-209,36,99.5,mat.black);
+  // The loose lead is illustrative; no socket location or wiring route is implied.
+  pipe(objects.towelWarmer,[[-209,0,82],[-209,-28,82],[-230,-70,70],[-235,-150,60]],2.5,mat.black);
+
   objects.washer=group('washer');
   const placement=washerPlacement();objects.washer.position.set(placement.position[0]-60,0,placement.position[2]-80);
   rounded(objects.washer,550,850,600,12,335,0,380,mat.white);
@@ -157,7 +172,7 @@ export function createBathroom(inputMaterials={}){
     for(const p of frameParts)p.position.copy(p.userData.base).addScaledVector(p.userData.direction,k);
     root.updateMatrixWorld(true);
   }
-  for(const [id,object]of Object.entries(objects))object.userData.wall=['countertop','basin','mixer','mirror','washer','toilet','frame'].includes(id)?'west':['showerSystem','hygienic'].includes(id)?'south':null;
+  for(const [id,object]of Object.entries(objects))object.userData.wall=['countertop','basin','mixer','mirror','washer','toilet','frame'].includes(id)?'west':['showerSystem','hygienic'].includes(id)?'south':id==='towelWarmer'?'north':null;
   root.scale.setScalar(.001);root.updateMatrixWorld(true);
   return{root,walls,floor,dimensions,objects,frameParts,planes:basePlanes,materials:mat,setCounterHeight,setExplode};
 }
