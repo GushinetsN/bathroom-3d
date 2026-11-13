@@ -2,8 +2,8 @@ import * as T from './vendor/three.module.js';
 import {OrbitControls} from './vendor/controls/OrbitControls.js';
 import {RoomEnvironment} from './vendor/environments/RoomEnvironment.js';
 import {Reflector} from './vendor/objects/Reflector.js';
-import {createBathroom} from './model.mjs?v=20261113-towel-warmer';
-import {fixtures,heightCheck} from './design.mjs?v=20261113-towel-warmer';
+import {createBathroom} from './model.mjs?v=20261113-double-outlet';
+import {fixtures,heightCheck} from './design.mjs?v=20261113-double-outlet';
 
 const $=s=>document.querySelector(s),wrap=$('#canvas-wrap');
 let renderer,model,controls,camera,dirty=true,selection=null,selectionBox=null;

@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {createUnderframe,washerPlacement,wallOffset} from './underframe.mjs?v=20261112-sto-bottom-rows';
-import {room,fixtures} from './design.mjs?v=20261113-towel-warmer';
+import {room,fixtures} from './design.mjs?v=20261113-double-outlet';
 import {floorLayout,wallLayout,faces,facePolygon,showerBase,showerHeight,drainLevel} from './tiling-layout.mjs?v=20261112-sto-bottom-rows';
 
 export function createBathroom(inputMaterials={}){
@@ -94,8 +94,22 @@ export function createBathroom(inputMaterials={}){
   for(const y of [35,112,188,265])rounded(warmerBody,418,18,22,5,0,y-9,88,mat.black);
   rounded(warmerBody,14,36,2,2,-209,18,99,mat.core);
   box(warmerBody,5,9,1,-209,36,99.5,mat.black);
-  // The loose lead is illustrative; no socket location or wiring route is implied.
-  pipe(objects.towelWarmer,[[-209,0,82],[-209,-28,82],[-230,-70,70],[-235,-150,60]],2.5,mat.black);
+  objects.powerOutlet=group('powerOutlet');objects.powerOutlet.position.set(...fixtures.powerOutlet.position);
+  rounded(objects.powerOutlet,150,80,10,5,0,-40,5,mat.black);
+  for(const x of [-37.5,37.5]){
+    rounded(objects.powerOutlet,68,68,4,4,x,-34,12,mat.black);
+    cylinder(objects.powerOutlet,25,25,1.2,x,0,14.6,mat.core,'z');
+    for(const dx of [-9.5,9.5])cylinder(objects.powerOutlet,3,3,1,x+dx,0,15.5,mat.black,'z');
+    for(const dx of [-22,22])box(objects.powerOutlet,2,14,1,x+dx,0,15.5,mat.steel);
+    const lid=new T.Group();lid.position.set(x,33,16);lid.rotation.x=-Math.PI*.6;objects.powerOutlet.add(lid);
+    rounded(lid,66,64,3,4,0,-64,0,mat.black);
+  }
+  const plug=new T.Group();plug.name='towel-warmer-plug';objects.powerOutlet.add(plug);
+  rounded(plug,32,48,30,5,37.5,-24,33,mat.black);
+  cylinder(plug,4.5,4.5,10,37.5,-28,39,mat.black);
+  const [ox,oy]=fixtures.powerOutlet.position,[tx,ty]=fixtures.towelWarmer.position;
+  // Visual connection only: cable length, outlet model and electrical installation remain unverified.
+  pipe(objects.towelWarmer,[[-209,0,82],[-209,-45,82],[ox+130-tx,oy+70-ty,55],[ox+95-tx,oy-75-ty,45],[ox+37.5-tx,oy-58-ty,39],[ox+37.5-tx,oy-33-ty,39]],2.5,mat.black);
 
   objects.washer=group('washer');
   const placement=washerPlacement();objects.washer.position.set(placement.position[0]-60,0,placement.position[2]-80);
@@ -172,7 +186,7 @@ export function createBathroom(inputMaterials={}){
     for(const p of frameParts)p.position.copy(p.userData.base).addScaledVector(p.userData.direction,k);
     root.updateMatrixWorld(true);
   }
-  for(const [id,object]of Object.entries(objects))object.userData.wall=['countertop','basin','mixer','mirror','washer','toilet','frame'].includes(id)?'west':['showerSystem','hygienic'].includes(id)?'south':id==='towelWarmer'?'north':null;
+  for(const [id,object]of Object.entries(objects))object.userData.wall=['countertop','basin','mixer','mirror','washer','toilet','frame'].includes(id)?'west':['showerSystem','hygienic'].includes(id)?'south':['towelWarmer','powerOutlet'].includes(id)?'north':null;
   root.scale.setScalar(.001);root.updateMatrixWorld(true);
   return{root,walls,floor,dimensions,objects,frameParts,planes:basePlanes,materials:mat,setCounterHeight,setExplode};
 }
