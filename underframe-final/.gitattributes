@@ -1,0 +1,6 @@
+*.pdf -text -diff
+*.png -text -diff
+*.zip -text -diff
+*.mjs text eol=lf
+*.js text eol=lf
+vendor/** -whitespace

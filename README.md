@@ -1,5 +1,7 @@
 # Санузел — 3D-модель
 
+**[Итоговое подстолье СТО: актуальная модель, ведомость Ozon и инструкция](https://gushinetsn.github.io/bathroom-3d/underframe-final/)** — редакция17.11.2026.
+
 **[Открыть интерактивную модель](https://gushinetsn.github.io/bathroom-3d/)**
 
 **[Раскладка стен и пола - 8 листов](https://gushinetsn.github.io/bathroom-3d/tiling/)** · **[Все стены рядом](https://gushinetsn.github.io/bathroom-3d/tiling/index.html?sheet=8)** · **[PDF для печати A3](https://gushinetsn.github.io/bathroom-3d/tiling/scheme.pdf)**
